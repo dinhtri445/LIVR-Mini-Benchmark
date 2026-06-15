@@ -112,7 +112,8 @@ def prepare_vqa_inputs(processor, conversation, latent_tokens, device="cuda"):
                     content_item["text"] = f"{content_item['text'].strip()}\n{latent_str}"
                     
     # 3. Áp dụng Chat Template cho cuộc hội thoại đầy đủ (để sinh input_ids đầy đủ)
-    full_text = processor.apply_chat_template(conv, tokenize=False, add_generation_prompt=False)
+    is_training = (conv[-1]["role"] == "assistant")
+    full_text = processor.apply_chat_template(conv, tokenize=False, add_generation_prompt=not is_training)
     
     # 4. Áp dụng Chat Template cho phần Prompt của User (để tìm độ dài prompt)
     user_conv = [msg for msg in conv if msg["role"] == "user"]

@@ -26,8 +26,8 @@ def generate_stage1_bottleneck_mask(seq_len, img_start, img_end, prompt_end, lat
     # Latent tokens nhìn Prompt: Mở luồng để hiểu ngữ cảnh câu hỏi
     mask[latent_indices.unsqueeze(1), prompt_indices] = True
     
-    # 3. Tạo ma trận cộng thích hợp với bfloat16
-    float_mask = torch.zeros(seq_len, seq_len, dtype=torch.bfloat16, device=device)
+    # 3. Tạo ma trận cộng thích hợp với float32
+    float_mask = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device)
     # Dùng -65500.0 thay cho float("-inf") để tăng độ ổn định toán học
     float_mask = float_mask.masked_fill(~mask, -65500.0)
     
@@ -71,7 +71,7 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 if len(img_positions) == 0:
                     # Nếu không có ảnh, dùng causal mask mặc định
                     m = torch.tril(torch.ones(seq_len, seq_len, device=device)).bool()
-                    fm = torch.zeros(seq_len, seq_len, dtype=torch.bfloat16, device=device).masked_fill(~m, -65500.0)
+                    fm = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m, -65500.0)
                     custom_masks.append(fm.unsqueeze(0))
                     continue
                     
@@ -87,7 +87,7 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 
                 if len(latent_positions) == 0:
                     m = torch.tril(torch.ones(seq_len, seq_len, device=device)).bool()
-                    fm = torch.zeros(seq_len, seq_len, dtype=torch.bfloat16, device=device).masked_fill(~m, -65500.0)
+                    fm = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m, -65500.0)
                     custom_masks.append(fm.unsqueeze(0))
                     continue
                     
@@ -107,7 +107,7 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 else:
                     # Stage 2: Causal mask bình thường
                     m_bool = torch.tril(torch.ones(seq_len, seq_len, device=device)).bool()
-                    m = torch.zeros(seq_len, seq_len, dtype=torch.bfloat16, device=device).masked_fill(~m_bool, -65500.0)
+                    m = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m_bool, -65500.0)
                     
                 custom_masks.append(m.unsqueeze(0))
                 

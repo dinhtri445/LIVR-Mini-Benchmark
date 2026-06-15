@@ -13,5 +13,6 @@
   "batch_size_per_device": 1,
   "grad_accumulation_steps": 8,
   "dataset_name": "Kkuntal990/LIVR_mixed",
-  "output_dir": "/content/drive/MyDrive/LIVR_Mini_Project/checkpoints"
+  "output_dir": "/content/drive/MyDrive/LIVR_Mini_Project/checkpoints",
+  "load_in_4bit": true
 }

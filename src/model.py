@@ -1,16 +1,17 @@
 # src/model.py
 import torch
-from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration, BitsAndBytesConfig
 from peft import LoraConfig, get_peft_model
 
 class LIVRModelManager:
     """
     Trình quản lý cấu hình kiến trúc mạng LIVR:
-    1. Khởi tạo Qwen2.5-VL và mở rộng Vocab cho K=16 tokens ẩn.
-    2. Cài đặt mạng LoRA Adapters.
-    3. Đăng ký Backward Hook đóng băng tuyệt đối toàn bộ bảng nhúng, ngoại trừ Latent Tokens.
+    1. Khởi tạo Qwen2.5-VL (Hỗ trợ QLoRA 4-bit/float16 cho T4 GPU miễn phí).
+    2. Mở rộng Vocab cho K=16 tokens ẩn.
+    3. Cài đặt mạng LoRA Adapters.
+    4. Đăng ký Backward Hook đóng băng tuyệt đối toàn bộ bảng nhúng, ngoại trừ Latent Tokens.
     """
-    def __init__(self, model_id="Qwen/Qwen2.5-VL-3B-Instruct", K=16, device="cuda"):
+    def __init__(self, model_id="Qwen/Qwen2.5-VL-3B-Instruct", K=16, device="cuda", load_in_4bit=True):
         self.model_id = model_id
         self.K = K
         self.device = device
@@ -27,12 +28,28 @@ class LIVRModelManager:
         self.image_pad_token_id = self.processor.tokenizer.convert_tokens_to_ids("<|image_pad|>")
         self.pad_token_id = self.processor.tokenizer.pad_token_id if self.processor.tokenizer.pad_token_id is not None else self.processor.tokenizer.eos_token_id
         
-        print(f"Loading model weight...")
-        self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-            model_id,
-            torch_dtype=torch.bfloat16,
-            device_map=device
-        )
+        print(f"Loading model weight (load_in_4bit={load_in_4bit})...")
+        
+        if load_in_4bit:
+            # Cấu hình lượng hóa QLoRA 4-bit tối ưu hóa VRAM cho card T4 miễn phí
+            bnb_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.float16 # Dùng float16 cho T4 thay vì bfloat16
+            )
+            self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+                model_id,
+                quantization_config=bnb_config,
+                device_map="auto" # Tự động phân bổ phân mảnh tối ưu
+            )
+        else:
+            # Load thông thường ở dạng bfloat16 (dành cho GPU thế hệ mới L4/A100)
+            self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+                model_id,
+                torch_dtype=torch.bfloat16,
+                device_map=device
+            )
         
         print(f"Resizing token embeddings to {len(self.processor.tokenizer)}...")
         self.model.resize_token_embeddings(len(self.processor.tokenizer))
