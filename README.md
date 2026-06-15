@@ -11,10 +11,14 @@ Kiến trúc LIVR (Suy luận Thị giác Ngầm ẩn qua Trạng thái Ẩn) d�
 
 Quá trình huấn luyện được thực hiện qua **2 Giai đoạn (Two-Stage Training)**:
 1.  **Giai đoạn 1 (Bottleneck Mask)**: Sử dụng một ma trận Attention Mask tùy biến nhằm chặn hoàn toàn kết nối chú ý (attention) trực tiếp từ câu hỏi (Prompt) và câu trả lời (Answer) đến các mảnh ảnh (Image Tokens). Toàn bộ dòng thông tin thị giác bắt buộc phải đi vòng qua $K$ Latent Tokens để nén thông tin.
+   
     $$A_{i, j} = 0 \quad \text{if } i \ge j \text{ and } \text{blocked}(i, j) = \text{False}$$
+    
     $$A_{i, j} = -65500.0 \quad \text{otherwise}$$
-    *Trong đó, $\text{blocked}(i, j) = \text{True}$ (bị chặn) khi hàng $i \in \{\text{Prompt}, \text{Answer}\}$ và cột $j \in \{\text{Image}\}$.*
-2.  **Giai đoạn 2 (Unmasked Co-training)**: Gỡ bỏ mặt nạ bottleneck, phục hồi ma trận Causal Attention tiêu chuẩn để mô hình đồng hóa biểu diễn ẩn cấu trúc cao đã học được ở Giai đoạn 1 với các đặc trưng ảnh chi tiết mức thấp (raw pixels).
+
+    Trong đó, $\text{blocked}(i, j) = \text{True}$ (bị chặn) khi hàng $i \in \{\text{Prompt}, \text{Answer}\}$ và cột $j \in \{\text{Image}\}$.
+    
+3.  **Giai đoạn 2 (Unmasked Co-training)**: Gỡ bỏ mặt nạ bottleneck, phục hồi ma trận Causal Attention tiêu chuẩn để mô hình đồng hóa biểu diễn ẩn cấu trúc cao đã học được ở Giai đoạn 1 với các đặc trưng ảnh chi tiết mức thấp (raw pixels).
 
 ---
 
