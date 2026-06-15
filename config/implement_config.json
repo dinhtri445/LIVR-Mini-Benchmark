@@ -1,0 +1,17 @@
+{
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "K": 16,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "stage1_epochs": 2,
+  "stage2_epochs": 3,
+  "stage1_lr": 1e-4,
+  "stage2_lr": 5e-5,
+  "weight_decay": 0.01,
+  "effective_batch_size": 8,
+  "batch_size_per_device": 1,
+  "grad_accumulation_steps": 8,
+  "dataset_name": "Kkuntal990/LIVR_mixed",
+  "output_dir": "/content/drive/MyDrive/LIVR_Mini_Project/checkpoints"
+}
