@@ -70,14 +70,28 @@ pred_text = processor.decode(outputs[0][input_len:], skip_special_tokens=True).s
 
 #### 💡 Giải thích & Ví dụ thực tế:
 *   **Vấn đề**:
-    1. Nếu gửi nguyên danh sách hội thoại có chứa sẵn nhãn trả lời của Assistant (như trong tệp tin copy) vào `model.generate()`, mô hình sẽ đọc được đáp án và sinh ra các ký tự rác tiếp theo.
-    2. Hàm `model.generate()` mặc định trả ra chuỗi token bao gồm cả prompt đầu vào. Nếu so sánh cả cụm *"Có bao nhiêu quả táo? 5"* với nhãn đất *"5"*, phép so sánh sẽ luôn sai và độ chính xác (Accuracy) luôn bằng 0%.
-*   **Giải pháp**:
-    1. Lọc bỏ vai trò assistant trước khi gửi đi suy luận để mô hình tự lực trả lời.
-    2. Sử dụng kỹ thuật cắt lát Python `outputs[0][input_len:]` để loại bỏ toàn bộ phần câu hỏi của prompt đầu vào, chỉ lấy đúng các ký tự mà mô hình sinh thêm để mang đi so sánh đối chiếu.
-*   **Ví dụ thực tế**: Giống như đi thi trắc nghiệm. 
-    1. Nếu bạn đưa cho học sinh đề bài có khoanh sẵn đáp án (gửi cả assistant message vào prompt), học sinh chỉ việc đọc lại đáp án.
-    2. Khi chấm điểm, giám thị chỉ so sánh phần viết thêm trong ô trả lời của học sinh (sử dụng cắt lát `[input_len:]`) với đáp án chuẩn, chứ không so sánh cả đề bài kèm theo.
+    1. Nếu gửi nguyên danh sách hội thoại có chứa sẵn nhãn trả lời của Assistant (như trong t### Kỹ thuật 4: Tải song song đa luồng & Nạp cục bộ cô lập (`src/utils.py`)
+
+#### 📑 Mã nguồn thay đổi (Diff):
+```python
+# Tải song song toàn bộ kho dữ liệu (bao gồm cả ảnh thô)
+snapshot_download(
+    repo_id="Kkuntal990/LIVR_mixed",
+    repo_type="dataset",
+    local_dir=local_dir,
+    token=token,
+    max_workers=8,
+    local_dir_use_symlinks=False
+)
+# Chỉ nạp thư mục train cục bộ để nạp dữ liệu
+local_train_dir = os.path.join(local_dir, "train")
+dataset = load_dataset("imagefolder", data_dir=local_train_dir)
+```
+
+#### 💡 Giải thích & Ví dụ thực tế:
+*   **Vấn đề**: Tải 9.000 file ảnh thô qua mạng với cơ chế mặc định của HF sẽ bị tải lười (Lazy-Loading), tức là đọc ảnh nào tải ảnh đó, dẫn đến 9.000 kết nối tuần tự cực kỳ chậm.
+*   **Giải pháp**: Tải một lượt duy nhất toàn bộ repo thông qua đa luồng (`max_workers=8`), kéo toàn bộ 21.5 GB dữ liệu (bao gồm ảnh và metadata) về SSD trong ~2 phút. Sau đó cô lập bộ nạp `imagefolder` chỉ trỏ tới thư mục `train` con để tránh xung đột cấu trúc cột với các tập đánh giá khác (như VSP hay BLINK).
+*   **Ví dụ thực tế**: Thay vì mỗi lần nấu ăn bạn lại chạy ra siêu thị mua đúng 1 quả cà chua (Lazy Loading), bạn thuê một đội xe tải chở thẳng một xe đầy đủ thực phẩm chất vào tủ lạnh nhà bạn (Snapshot Download). Sau đó, bạn chỉ mở ngăn tủ rau củ (thư mục `train/`) để lấy rau nấu ăn, tránh việc nhầm lẫn với ngăn thuốc gia đình (các tập đánh giá khác có cột khác).
 
 ---
 
@@ -109,3 +123,13 @@ pred_text = processor.decode(outputs[0][input_len:], skip_special_tokens=True).s
     2. Sử dụng `grad_accumulation_steps = 8` để mô phỏng batch size bằng 8.
     3. Sử dụng `torch.nn.utils.clip_grad_norm_` giới hạn `max_norm=1.0` để chống bùng nổ gradient trong quá trình tích lũy.
     4. Thêm chốt chặn gán nhãn `-100` cho tất cả token không thuộc phần trả lời của trợ lý để mô hình không phải tính toán loss và gradient cho phần câu hỏi, tiết kiệm đáng kể tài nguyên tính toán.
+
+### 🚨 Sự cố 4: Tải ảnh quá chậm (Lazy-Loading Bottleneck)
+*   **Triệu chứng**: Tải 9.000 ảnh thô về Colab mất hơn 2 tiếng đồng hồ và thường xuyên bị tạm dừng giữa chừng.
+*   **Nguyên nhân**: Hàm `load_dataset` mặc định của Hugging Face chỉ tải thông tin văn bản, còn dữ liệu ảnh chỉ được kéo về từng ảnh một qua kết nối HTTP đơn luồng mỗi khi vòng lặp tiền xử lý Python chạm tới cột `image`.
+*   **Khắc phục**: Chuyển đổi sang sử dụng `huggingface_hub.snapshot_download` để kéo toàn bộ repository về ổ đĩa cục bộ thông qua cơ chế song song đa luồng (`max_workers=8`) trước khi chạy code làm sạch dữ liệu.
+
+### 🚨 Sự cố 5: Xung đột cấu trúc cột (Schema Mismatch / Different Features)
+*   **Triệu chứng**: `[WARNING] Gặp lỗi khi chạy tải song song hoặc nạp cục bộ: Metadata files ... have different features ...`
+*   **Nguyên nhân**: Bộ đọc `imagefolder` của Hugging Face khi trỏ vào thư mục gốc của snapshot đã tự động quét và ghép toàn bộ các tệp `metadata.jsonl` ở các thư mục con khác nhau (gồm cả tập `vsp_planning` có chứa thêm cột tọa độ mê cung `'map_id'`, `'map_desc'`, v.v.). Sự lệch pha cấu trúc cột này làm bộ đọc bị lỗi.
+*   **Khắc phục**: Chỉ định rõ ràng thư mục con chứa tập huấn luyện chính: `data_dir=os.path.join(local_dir, "train")`, giúp cô lập file metadata cần đọc và nạp thành công 100%.

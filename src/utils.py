@@ -35,6 +35,7 @@ def load_and_inspect_livr_dataset():
             local_dir=local_dir,
             token=token,
             max_workers=8,
+            allow_patterns=["train/**"],  # Chỉ tải thư mục train để giảm dung lượng từ 21.5GB xuống 8.7GB
             local_dir_use_symlinks=False
         )
         print("\n[SUCCESS] Đã tải song song toàn bộ file ảnh và metadata về SSD cục bộ!")
