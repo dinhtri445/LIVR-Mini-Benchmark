@@ -40,11 +40,22 @@ def load_and_inspect_livr_dataset():
         )
         print("\n[SUCCESS] Đã tải song song toàn bộ file ảnh và metadata về SSD cục bộ!")
         
-        # 2. Nạp dataset cục bộ bằng bộ đọc "imagefolder" của Hugging Face
-        # Chỉ nạp thư mục "train" để tránh xung đột cấu trúc cột (different features) với các tập eval khác (như vsp_planning, livr_holdout)
-        local_train_dir = os.path.join(local_dir, "train")
-        print(f"-> Đang nạp dataset từ thư mục cục bộ {local_train_dir} vào bộ nhớ...")
-        dataset = load_dataset("imagefolder", data_dir=local_train_dir)
+        # 2. Nạp dataset bằng cách đọc trực tiếp file metadata.jsonl dưới dạng JSON
+        # Tránh lỗi Hugging Face tự động nhận diện nhầm thư mục con "images/counting/train" thành split chính
+        metadata_file = os.path.join(local_dir, "train/metadata.jsonl")
+        print(f"-> Đang nạp metadata từ file cục bộ: {metadata_file}...")
+        dataset = load_dataset("json", data_files=metadata_file)
+        
+        # Ánh xạ đường dẫn ảnh tuyệt đối và cast sang định dạng Image của Hugging Face
+        print("-> Đang liên kết đường dẫn hình ảnh cục bộ...")
+        def map_absolute_image_paths(example):
+            example["image"] = os.path.join(local_dir, "train", example["file_name"])
+            return example
+            
+        dataset = dataset.map(map_absolute_image_paths)
+        
+        from datasets import Image
+        dataset = dataset.cast_column("image", Image())
         print("[SUCCESS] Đã nạp thành công Dataset cục bộ!")
         
     except Exception as e:

@@ -69,29 +69,32 @@ pred_text = processor.decode(outputs[0][input_len:], skip_special_tokens=True).s
 ```
 
 #### 💡 Giải thích & Ví dụ thực tế:
-*   **Vấn đề**:
-    1. Nếu gửi nguyên danh sách hội thoại có chứa sẵn nhãn trả lời của Assistant (như trong t### Kỹ thuật 4: Tải song song đa luồng & Nạp cục bộ cô lập (`src/utils.py`)
+### Kỹ thuật 4: Tải song song đa luồng & Nạp cục bộ qua file JSON (`src/utils.py`)
 
 #### 📑 Mã nguồn thay đổi (Diff):
 ```python
-# Tải song song toàn bộ kho dữ liệu (bao gồm cả ảnh thô)
+# Tải song song toàn bộ kho dữ liệu (chỉ lấy thư mục train)
 snapshot_download(
     repo_id="Kkuntal990/LIVR_mixed",
     repo_type="dataset",
     local_dir=local_dir,
     token=token,
     max_workers=8,
+    allow_patterns=["train/**"],
     local_dir_use_symlinks=False
 )
-# Chỉ nạp thư mục train cục bộ để nạp dữ liệu
-local_train_dir = os.path.join(local_dir, "train")
-dataset = load_dataset("imagefolder", data_dir=local_train_dir)
+# Nạp trực tiếp metadata.jsonl bằng bộ đọc JSON của Hugging Face
+metadata_file = os.path.join(local_dir, "train/metadata.jsonl")
+dataset = load_dataset("json", data_files=metadata_file)
+# Liên kết đường dẫn ảnh tuyệt đối và cast cột sang Image chuẩn
+dataset = dataset.map(lambda x: {"image": os.path.join(local_dir, "train", x["file_name"])})
+dataset = dataset.cast_column("image", Image())
 ```
 
 #### 💡 Giải thích & Ví dụ thực tế:
 *   **Vấn đề**: Tải 9.000 file ảnh thô qua mạng với cơ chế mặc định của HF sẽ bị tải lười (Lazy-Loading), tức là đọc ảnh nào tải ảnh đó, dẫn đến 9.000 kết nối tuần tự cực kỳ chậm.
-*   **Giải pháp**: Tải một lượt duy nhất toàn bộ repo thông qua đa luồng (`max_workers=8`), kéo toàn bộ 21.5 GB dữ liệu (bao gồm ảnh và metadata) về SSD trong ~2 phút. Sau đó cô lập bộ nạp `imagefolder` chỉ trỏ tới thư mục `train` con để tránh xung đột cấu trúc cột với các tập đánh giá khác (như VSP hay BLINK).
-*   **Ví dụ thực tế**: Thay vì mỗi lần nấu ăn bạn lại chạy ra siêu thị mua đúng 1 quả cà chua (Lazy Loading), bạn thuê một đội xe tải chở thẳng một xe đầy đủ thực phẩm chất vào tủ lạnh nhà bạn (Snapshot Download). Sau đó, bạn chỉ mở ngăn tủ rau củ (thư mục `train/`) để lấy rau nấu ăn, tránh việc nhầm lẫn với ngăn thuốc gia đình (các tập đánh giá khác có cột khác).
+*   **Giải pháp**: Tải một lượt duy nhất toàn bộ repo thông qua đa luồng (`max_workers=8`), giới hạn chỉ tải thư mục `train/**` (~8.7 GB). Sau đó nạp trực tiếp file `metadata.jsonl` bằng bộ đọc JSON, ánh xạ đường dẫn tuyệt đối cho ảnh cục bộ và dùng `cast_column` định dạng sang kiểu `Image`. Điều này hoàn toàn bỏ qua lỗi nhận diện nhầm split của bộ nạp `imagefolder` khi gặp thư mục con trùng tên (như `images/counting/train/`).
+*   **Ví dụ thực tế**: Thay vì mỗi lần nấu ăn bạn lại chạy ra siêu thị mua đúng 1 quả cà chua (Lazy Loading), bạn thuê một đội xe tải chở thẳng một tủ chứa thực phẩm đặt vào bếp nhà bạn (Snapshot Download). Bạn không dùng người giúp việc tự động sắp xếp (bộ nạp `imagefolder` thông minh nhưng hay nhận nhầm ngăn tủ `train` của tác vụ đếm làm cả cái bếp), mà bạn tự tay mở đúng cuốn sổ tay thực đơn (`metadata.jsonl`) rồi tự lấy nguyên liệu ở đúng địa chỉ trong kho để nấu ăn.
 
 ---
 
