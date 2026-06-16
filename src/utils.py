@@ -14,10 +14,11 @@ def load_and_inspect_livr_dataset():
     print("======TIẾN HÀNH KẾT NỐI VÀ TẢI DATASET TRÊN HUGGING FACE ======")
     
     cache_dir = None
-    if os.path.exists("/content/drive/MyDrive"):
-        cache_dir = "/content/drive/MyDrive/LIVR_Mini_Project/data_cache"
+    # Sử dụng SSD cục bộ của Colab (/content/dataset_cache) thay vì Google Drive để tránh nghẽn cổ chai mạng (I/O Bottleneck)
+    if os.path.exists("/content"):
+        cache_dir = "/content/dataset_cache"
         os.makedirs(cache_dir, exist_ok=True)
-        print(f"-> Phát hiện Google Drive. Dataset sẽ được lưu/tải từ cache: {cache_dir}")
+        print(f"-> Sử dụng ổ SSD cục bộ của Colab để lưu cache dataset (tốc độ cao): {cache_dir}")
     
     # Tải dataset trực tiếp từ Link: https://huggingface.co/datasets/Kkuntal990/LIVR_mixed
     dataset = load_dataset("Kkuntal990/LIVR_mixed", "livr_train", cache_dir=cache_dir)
@@ -46,8 +47,9 @@ def filter_and_deduplicate_pipeline(dataset):
     seen_hashes = set()
     cleaned_data = []
     
-    # Duyệt qua tập train thô để tiến hành gạn lọc
-    for item in dataset['train']:
+    from tqdm import tqdm
+    # Duyệt qua tập train thô để tiến hành gạn lọc với thanh tiến trình tqdm
+    for item in tqdm(dataset['train'], desc="Đang xử lý ảnh (pHash & Lọc)"):
         task_type = item.get('task', '')
         answer = str(item.get('answer', '')).strip()
         image_obj = item.get('image') # Đây là một đối tượng PIL Image do HF Datasets tự động load
