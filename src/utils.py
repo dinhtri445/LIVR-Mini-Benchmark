@@ -10,19 +10,53 @@ def load_and_inspect_livr_dataset():
     """
     Hàm kết nối API Hugging Face, nạp tập dữ liệu hỗn hợp đa tác vụ LIVR 
     và in báo cáo cấu trúc để nghiệm thu Tuần 1.
+    Sử dụng huggingface_hub.snapshot_download để tải song song (multi-threaded) toàn bộ
+    kho lưu trữ về ổ SSD cục bộ nhằm tránh nghẽn mạng lazy-loading khi truy cập ảnh.
     """
     print("======TIẾN HÀNH KẾT NỐI VÀ TẢI DATASET TRÊN HUGGING FACE ======")
     
-    cache_dir = None
-    # Sử dụng SSD cục bộ của Colab (/content/dataset_cache) thay vì Google Drive để tránh nghẽn cổ chai mạng (I/O Bottleneck)
-    if os.path.exists("/content"):
-        cache_dir = "/content/dataset_cache"
-        os.makedirs(cache_dir, exist_ok=True)
-        print(f"-> Sử dụng ổ SSD cục bộ của Colab để lưu cache dataset (tốc độ cao): {cache_dir}")
+    token = os.environ.get("HF_TOKEN")
     
-    # Tải dataset trực tiếp từ Link: https://huggingface.co/datasets/Kkuntal990/LIVR_mixed
-    dataset = load_dataset("Kkuntal990/LIVR_mixed", "livr_train", cache_dir=cache_dir)
-    print("\n[SUCCESS] Đã tải thành công Dataset!")
+    # 1. Xác định thư mục lưu trữ cục bộ trên ổ SSD của Colab (hoặc máy local)
+    local_dir = "/content/dataset_raw"
+    if not os.path.exists("/content"):
+        local_dir = os.path.join(os.getcwd(), "dataset_raw")
+        
+    print(f"-> Đang chuẩn bị tải song song toàn bộ repo về ổ SSD cục bộ: {local_dir}")
+    print("-> Cơ chế này sẽ tải toàn bộ ảnh đồng thời (multi-threaded), giúp tăng tốc gấp 10-20 lần!")
+    
+    dataset = None
+    try:
+        from huggingface_hub import snapshot_download
+        print("-> Đang gọi snapshot_download từ huggingface_hub...")
+        snapshot_download(
+            repo_id="Kkuntal990/LIVR_mixed",
+            repo_type="dataset",
+            local_dir=local_dir,
+            token=token,
+            max_workers=8,
+            local_dir_use_symlinks=False
+        )
+        print("\n[SUCCESS] Đã tải song song toàn bộ file ảnh và metadata về SSD cục bộ!")
+        
+        # 2. Nạp dataset cục bộ bằng bộ đọc "imagefolder" của Hugging Face
+        print("-> Đang nạp dataset từ thư mục cục bộ vào bộ nhớ...")
+        dataset = load_dataset("imagefolder", data_dir=local_dir)
+        print("[SUCCESS] Đã nạp thành công Dataset cục bộ!")
+        
+    except Exception as e:
+        print(f"\n[WARNING] Gặp lỗi khi chạy tải song song hoặc nạp cục bộ: {e}")
+        print("-> Tiến hành Fallback: Tải trực tiếp bằng cơ chế load_dataset truyền thống...")
+        
+        cache_dir = None
+        if os.path.exists("/content"):
+            cache_dir = "/content/dataset_cache"
+            os.makedirs(cache_dir, exist_ok=True)
+            print(f"-> Sử dụng ổ SSD cục bộ của Colab để lưu cache dataset: {cache_dir}")
+            
+        dataset = load_dataset("Kkuntal990/LIVR_mixed", "livr_train", cache_dir=cache_dir)
+        print("\n[SUCCESS] Đã tải thành công Dataset bằng cơ chế Fallback!")
+        
     print(f"Cấu trúc phân vùng hệ thống (Splits): \n{dataset}")
     sample_data = dataset['train'][0]
     print("\n====== MẪU KIỂM TRA THỬ NGHIỆM DÒNG ĐẦU TIÊN (SAMPLE INGESTION) ======")
