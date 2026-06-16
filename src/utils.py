@@ -14,7 +14,7 @@ def load_and_inspect_livr_dataset():
     print("======TIẾN HÀNH KẾT NỐI VÀ TẢI DATASET TRÊN HUGGING FACE ======")
     
     # Tải dataset trực tiếp từ Link: https://huggingface.co/datasets/Kkuntal990/LIVR_mixed
-    dataset = load_dataset("Kkuntal990/LIVR_mixed")
+    dataset = load_dataset("Kkuntal990/LIVR_mixed", "livr_train")
     print("\n[SUCCESS] Đã tải thành công Dataset!")
     print(f"Cấu trúc phân vùng hệ thống (Splits): \n{dataset}")
     sample_data = dataset['train'][0]
