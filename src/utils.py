@@ -13,8 +13,14 @@ def load_and_inspect_livr_dataset():
     """
     print("======TIẾN HÀNH KẾT NỐI VÀ TẢI DATASET TRÊN HUGGING FACE ======")
     
+    cache_dir = None
+    if os.path.exists("/content/drive/MyDrive"):
+        cache_dir = "/content/drive/MyDrive/LIVR_Mini_Project/data_cache"
+        os.makedirs(cache_dir, exist_ok=True)
+        print(f"-> Phát hiện Google Drive. Dataset sẽ được lưu/tải từ cache: {cache_dir}")
+    
     # Tải dataset trực tiếp từ Link: https://huggingface.co/datasets/Kkuntal990/LIVR_mixed
-    dataset = load_dataset("Kkuntal990/LIVR_mixed", "livr_train")
+    dataset = load_dataset("Kkuntal990/LIVR_mixed", "livr_train", cache_dir=cache_dir)
     print("\n[SUCCESS] Đã tải thành công Dataset!")
     print(f"Cấu trúc phân vùng hệ thống (Splits): \n{dataset}")
     sample_data = dataset['train'][0]
