@@ -35,32 +35,35 @@ def load_and_inspect_livr_dataset():
             
     return dataset
 
-def filter_and_deduplicate_pipeline(dataset):
+def filter_and_deduplicate_pipeline(dataset, target_tasks=['livr_counting', 'livr_object_localization', 'livr_jigsaw', 'livr_visual_similarity'], samples_per_task=300):
     """
     Giao thức tiền xử lý nâng cao (Tuần 2):
-    1. Lọc dải đối tượng đếm từ 2 đến 10.
+    1. Chỉ lọc ra 4 tác vụ mục tiêu (livr_counting, livr_object_localization, livr_jigsaw, livr_visual_similarity).
     2. Khử trùng lặp ảnh bằng thuật toán Perceptual Hashing (pHash).
     3. Định dạng cấu trúc Chat Template chuẩn cho Qwen2.5-VL.
+    4. Trích xuất cân bằng tối đa 300 mẫu sạch cho mỗi tác vụ (tổng 1,200 mẫu).
     """
-    print("\n====== BẮT ĐẦU CHẠY PIPELINE TIỀN XỬ LÝ NÂNG CAO ======")
+    print("\n====== BẮT ĐẦU CHẠY PIPELINE TIỀN XỬ LÝ NÂNG CAO (BALANCED MULTI-TASK) ======")
     
     seen_hashes = set()
-    cleaned_data = []
+    
+    # Khởi tạo danh sách nhóm cho từng tác vụ mục tiêu
+    task_groups = {task: [] for task in target_tasks}
     
     from tqdm import tqdm
     # Duyệt qua tập train thô để tiến hành gạn lọc với thanh tiến trình tqdm
     for item in tqdm(dataset['train'], desc="Đang xử lý ảnh (pHash & Lọc)"):
-        task_type = item.get('task', '')
-        answer = str(item.get('answer', '')).strip()
-        image_obj = item.get('image') # Đây là một đối tượng PIL Image do HF Datasets tự động load
-        query = item.get('query', '')
+        task_name = item.get('dataset_name', '')
         
-        # --- BƯỚC 1: LỌC RIÊNG CHO TÁC VỤ COUNTING (Theo Spec tác giả) ---
-        if task_type == 'counting':
-            if not answer.isdigit() or not (2 <= int(answer) <= 10):
-                continue # Bỏ qua nếu đối tượng đếm nằm ngoài dải 2-10
-                
-        # --- BƯỚC 2: KHỬ TRÙNG LẶP ẢNH (VISUAL DE-DUPLICATION) ---
+        # Chỉ xử lý các tác vụ nằm trong danh sách mục tiêu
+        if task_name not in task_groups:
+            continue
+            
+        answer = str(item.get('ground_truth', '')).strip()
+        image_obj = item.get('image') # Đây là một đối tượng PIL Image do HF Datasets tự động load
+        query = str(item.get('question', '')).strip()
+        
+        # --- KHỬ TRÙNG LẶP ẢNH (VISUAL DE-DUPLICATION) ---
         try:
             # Tính toán mã băm nhận thức (Perceptual Hash) của bức ảnh
             v_hash = imagehash.phash(image_obj)
@@ -70,7 +73,12 @@ def filter_and_deduplicate_pipeline(dataset):
         except Exception as e:
             continue # Bỏ qua nếu file ảnh bị lỗi cấu trúc vật lý
             
-        # --- BƯỚC 3: ĐỊNH DẠNG CHAT TEMPLATE CHUẨN CHO QWEN2.5-VL ---
+        # Định dạng câu hỏi: Nếu có choices trắc nghiệm, ghép thêm vào câu hỏi cho mô hình đọc
+        choices = item.get('choices', '')
+        if choices and str(choices).strip() and str(choices).strip() not in query:
+            query = f"{query}\n{choices}"
+            
+        # --- ĐỊNH DẠNG CHAT TEMPLATE CHUẨN CHO QWEN2.5-VL ---
         # Chuyển đổi định dạng câu hỏi thô thành cấu trúc hội thoại đa phương thức
         formatted_conversation = [
             {
@@ -88,16 +96,21 @@ def filter_and_deduplicate_pipeline(dataset):
             }
         ]
         
-        # Lưu lại bản ghi đã làm sạch và định dạng chuẩn
-        cleaned_data.append({
+        # Phân nhóm mẫu sạch
+        task_groups[task_name].append({
             "conversation": formatted_conversation,
-            "task": task_type
+            "task": task_name
         })
         
-    print(f"[SUCCESS] Quy trình kết thúc!")
-    print(f"- Số lượng ảnh trùng lặp hoặc lỗi bị loại bỏ: {len(dataset['train']) - len(cleaned_data)}")
-    print(f"- Tổng số mẫu 'sạch' đạt chuẩn giữ lại cho bản Mini: {len(cleaned_data)} mẫu.")
-    
+    # Lấy mẫu cân bằng (Balanced Sampling) - Tối đa samples_per_task mẫu mỗi tác vụ
+    cleaned_data = []
+    print("\n Thống kê số lượng mẫu sạch thu được:")
+    for task, samples in task_groups.items():
+        sampled_list = samples[:samples_per_task]
+        cleaned_data.extend(sampled_list)
+        print(f"- Tác vụ '{task}': Lấy {len(sampled_list)} / {len(samples)} mẫu sạch.")
+        
+    print(f"\n[SUCCESS] Tổng số mẫu sạch thu được cho bản Mini: {len(cleaned_data)} mẫu.")
     return cleaned_data
 
 def prepare_vqa_inputs(processor, conversation, latent_tokens, device="cuda"):
