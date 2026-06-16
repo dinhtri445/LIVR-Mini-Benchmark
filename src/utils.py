@@ -40,8 +40,10 @@ def load_and_inspect_livr_dataset():
         print("\n[SUCCESS] Đã tải song song toàn bộ file ảnh và metadata về SSD cục bộ!")
         
         # 2. Nạp dataset cục bộ bằng bộ đọc "imagefolder" của Hugging Face
-        print("-> Đang nạp dataset từ thư mục cục bộ vào bộ nhớ...")
-        dataset = load_dataset("imagefolder", data_dir=local_dir)
+        # Chỉ nạp thư mục "train" để tránh xung đột cấu trúc cột (different features) với các tập eval khác (như vsp_planning, livr_holdout)
+        local_train_dir = os.path.join(local_dir, "train")
+        print(f"-> Đang nạp dataset từ thư mục cục bộ {local_train_dir} vào bộ nhớ...")
+        dataset = load_dataset("imagefolder", data_dir=local_train_dir)
         print("[SUCCESS] Đã nạp thành công Dataset cục bộ!")
         
     except Exception as e:
