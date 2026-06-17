@@ -18,7 +18,14 @@ class LIVRModelManager:
         self.latent_tokens = [f"<latent_{i}>" for i in range(K)]
         
         print(f"Loading processor & tokenizer for {model_id}...")
-        self.processor = AutoProcessor.from_pretrained(model_id)
+        # Giới hạn kích thước ảnh tối đa (max_pixels = 512 * 28 * 28) để tránh sinh quá nhiều visual tokens gây OOM trên T4 VRAM
+        min_pixels = 256 * 28 * 28
+        max_pixels = 512 * 28 * 28
+        self.processor = AutoProcessor.from_pretrained(
+            model_id,
+            min_pixels=min_pixels,
+            max_pixels=max_pixels
+        )
         
         # Thêm 16 từ khóa đặc biệt đại diện cho trạng thái ẩn
         self.processor.tokenizer.add_special_tokens({"additional_special_tokens": self.latent_tokens})
