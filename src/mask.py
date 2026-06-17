@@ -28,8 +28,8 @@ def generate_stage1_bottleneck_mask(seq_len, img_start, img_end, prompt_end, lat
     
     # 3. Tạo ma trận cộng thích hợp với float32
     float_mask = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device)
-    # Dùng -65500.0 thay cho float("-inf") để tăng độ ổn định toán học
-    float_mask = float_mask.masked_fill(~mask, -65500.0)
+    # Dùng -30000.0 thay cho float("-inf") để tăng độ ổn định toán học trong float16
+    float_mask = float_mask.masked_fill(~mask, -30000.0)
     
     return float_mask
 
@@ -89,7 +89,7 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 if len(img_positions) == 0:
                     # Nếu không có ảnh, dùng causal mask mặc định
                     m = torch.tril(torch.ones(seq_len, seq_len, device=device)).bool()
-                    fm = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m, -65500.0)
+                    fm = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m, -30000.0)
                     custom_masks.append(fm.unsqueeze(0))
                     continue
                     
@@ -105,7 +105,7 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 
                 if len(latent_positions) == 0:
                     m = torch.tril(torch.ones(seq_len, seq_len, device=device)).bool()
-                    fm = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m, -65500.0)
+                    fm = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m, -30000.0)
                     custom_masks.append(fm.unsqueeze(0))
                     continue
                     
@@ -125,7 +125,7 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 else:
                     # Stage 2: Causal mask bình thường
                     m_bool = torch.tril(torch.ones(seq_len, seq_len, device=device)).bool()
-                    m = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m_bool, -65500.0)
+                    m = torch.zeros(seq_len, seq_len, dtype=torch.float32, device=device).masked_fill(~m_bool, -30000.0)
                     
                 custom_masks.append(m.unsqueeze(0))
                 
