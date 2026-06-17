@@ -83,16 +83,23 @@ def load_and_inspect_livr_dataset():
             
     return dataset
 
-def filter_and_deduplicate_pipeline(dataset, target_tasks=['livr_counting', 'livr_object_localization', 'livr_jigsaw', 'livr_visual_similarity'], samples_per_task=300):
+def filter_and_deduplicate_pipeline(dataset, target_tasks=['livr_counting', 'livr_object_localization', 'livr_jigsaw', 'livr_visual_similarity'], samples_per_task=300, image_path_prefix=None):
     """
     Giao thức tiền xử lý nâng cao (Tuần 2):
     1. Chỉ lọc ra 4 tác vụ mục tiêu (livr_counting, livr_object_localization, livr_jigsaw, livr_visual_similarity).
     2. Khử trùng lặp ảnh bằng thuật toán Perceptual Hashing (pHash).
     3. Định dạng cấu trúc Chat Template chuẩn cho Qwen2.5-VL.
     4. Trích xuất cân bằng tối đa 300 mẫu sạch cho mỗi tác vụ (tổng 1,200 mẫu).
+    Lưu đường dẫn ảnh vật lý (str) thay vì đối tượng PIL Image để tránh tràn RAM (OOM) khi serialize.
     """
     print("\n====== BẮT ĐẦU CHẠY PIPELINE TIỀN XỬ LÝ NÂNG CAO (BALANCED MULTI-TASK) ======")
     
+    if image_path_prefix is None:
+        if os.path.exists("/content"):
+            image_path_prefix = "/content/dataset_raw/train"
+        else:
+            image_path_prefix = os.path.join(os.getcwd(), "dataset_raw/train")
+            
     seen_hashes = set()
     
     # Khởi tạo danh sách nhóm cho từng tác vụ mục tiêu
@@ -108,7 +115,7 @@ def filter_and_deduplicate_pipeline(dataset, target_tasks=['livr_counting', 'liv
             continue
             
         answer = str(item.get('ground_truth', '')).strip()
-        image_obj = item.get('image') # Đây là một đối tượng PIL Image do HF Datasets tự động load
+        image_obj = item.get('image') # Đây là đối tượng PIL Image được load tạm thời phục vụ pHash
         query = str(item.get('question', '')).strip()
         
         # --- KHỬ TRÙNG LẶP ẢNH (VISUAL DE-DUPLICATION) ---
@@ -126,13 +133,17 @@ def filter_and_deduplicate_pipeline(dataset, target_tasks=['livr_counting', 'liv
         if choices and str(choices).strip() and str(choices).strip() not in query:
             query = f"{query}\n{choices}"
             
+        # Xác định đường dẫn ảnh tuyệt đối cục bộ để lưu trữ siêu nhẹ
+        relative_path = item.get('file_name', '')
+        abs_image_path = os.path.join(image_path_prefix, relative_path)
+            
         # --- ĐỊNH DẠNG CHAT TEMPLATE CHUẨN CHO QWEN2.5-VL ---
         # Chuyển đổi định dạng câu hỏi thô thành cấu trúc hội thoại đa phương thức
         formatted_conversation = [
             {
                 "role": "user",
                 "content": [
-                    {"type": "image", "image": image_obj},
+                    {"type": "image", "image": abs_image_path},  # Lưu đường dẫn chuỗi siêu nhẹ
                     {"type": "text", "text": query}
                 ]
             },
@@ -188,13 +199,18 @@ def prepare_vqa_inputs(processor, conversation, latent_tokens, device="cuda"):
     user_conv = [msg for msg in conv if msg["role"] == "user"]
     prompt_text = processor.apply_chat_template(user_conv, tokenize=False, add_generation_prompt=True)
     
-    # 5. Extract images
+    # 5. Extract images (tự động nạp động PIL Image nếu trường image là đường dẫn chuỗi)
     images = []
     for msg in conv:
         if msg["role"] == "user":
             for content_item in msg["content"]:
                 if content_item["type"] == "image":
-                    images.append(content_item["image"])
+                    img_data = content_item["image"]
+                    if isinstance(img_data, str):
+                        # Nạp ảnh động (Lazy Loading) từ ổ SSD cục bộ và chuyển sang RGB
+                        img_data = Image.open(img_data).convert("RGB")
+                        content_item["image"] = img_data # Ghi đè lại đối tượng PIL Image vào conv
+                    images.append(img_data)
                     
     # 6. Chạy qua processor (Đã sửa lỗi cấu trúc bọc mảng lồng nhau cho Batch kích thước 1)
     full_inputs = processor(text=[full_text], images=[images], padding=True, return_tensors="pt")
