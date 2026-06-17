@@ -112,9 +112,15 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                 custom_masks.append(m.unsqueeze(0))
                 
             # 1. Tự động tính toán position_ids bằng 2D attention_mask gốc trước khi ghi đè mask 4D
-            # Điều này giúp Qwen2.5-VL tự sinh ma trận 3D RoPE vị trí chuẩn xác mà không bị lỗi get_rope_index với mask 4D
+            # Tìm backbone model (Qwen2_5_VLModel) chứa phương thức get_rope_index
             if position_ids is None:
-                position_ids, mrope_position_ids = self.model.get_rope_index(
+                backbone = self
+                if hasattr(backbone, "model"):
+                    backbone = backbone.model
+                    if hasattr(backbone, "model") and not hasattr(backbone, "get_rope_index"):
+                        backbone = backbone.model
+                
+                position_ids, mrope_position_ids = backbone.get_rope_index(
                     input_ids=input_ids,
                     mm_token_type_ids=kwargs.get("mm_token_type_ids"),
                     image_grid_thw=image_grid_thw,
