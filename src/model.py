@@ -78,6 +78,11 @@ class LIVRModelManager:
         
         self.model = get_peft_model(self.model, lora_config)
         
+        # Kích hoạt Gradient Checkpointing để tiết kiệm cực lớn VRAM (giảm ~60% VRAM sử dụng)
+        # Sử dụng use_reentrant=False để tương thích hoàn toàn với PEFT/LoRA trên Qwen2.5-VL
+        self.model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+        self.model.enable_input_require_grads()
+        
         print("Freezing base parameters & setup embedding hooks...")
         # 1. Cho phép bảng nhúng cập nhật tham số
         embed_tokens = self.model.get_input_embeddings()
