@@ -41,14 +41,32 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
     
     def livr_forward(
         self,
-        input_ids=None,
-        attention_mask=None,
-        position_ids=None,
-        pixel_values=None,
-        image_grid_thw=None,
-        labels=None,
+        *args,
         **kwargs
     ):
+        args = list(args)
+        def get_arg(name, index, default=None):
+            if name in kwargs:
+                return kwargs[name]
+            if len(args) > index:
+                return args[index]
+            return default
+
+        def set_arg(name, index, value):
+            if name in kwargs:
+                kwargs[name] = value
+            elif len(args) > index:
+                args[index] = value
+            else:
+                kwargs[name] = value
+
+        input_ids = get_arg("input_ids", 0)
+        attention_mask = get_arg("attention_mask", 1)
+        position_ids = get_arg("position_ids", 2)
+        pixel_values = get_arg("pixel_values", 10)
+        image_grid_thw = get_arg("image_grid_thw", 12)
+        labels = get_arg("labels", 5)
+
         stage = getattr(self, "livr_stage", 1)
         
         # Chỉ can thiệp trong quá trình training (khi có labels)
@@ -128,21 +146,14 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                     second_per_grid_ts=kwargs.get("second_per_grid_ts"),
                     attention_mask=attention_mask,
                 )
-                kwargs["position_ids"] = position_ids
+                set_arg("position_ids", 2, position_ids)
                 kwargs["mrope_position_ids"] = mrope_position_ids
 
             # 2. Đè lên trường attention_mask truyền vào transformer
             attention_mask = torch.stack(custom_masks, dim=0).to(dtype=self.dtype)
+            set_arg("attention_mask", 1, attention_mask)
             
-        return original_forward(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            position_ids=kwargs.get("position_ids", position_ids),
-            pixel_values=pixel_values,
-            image_grid_thw=image_grid_thw,
-            labels=labels,
-            **kwargs
-        )
+        return original_forward(*args, **kwargs)
         
     model.forward = types.MethodType(livr_forward, model)
     model.livr_stage = 1
