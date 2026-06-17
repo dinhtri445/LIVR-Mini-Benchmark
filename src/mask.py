@@ -111,13 +111,27 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
                     
                 custom_masks.append(m.unsqueeze(0))
                 
-            # Đè lên trường attention_mask truyền vào transformer
+            # 1. Tự động tính toán position_ids bằng 2D attention_mask gốc trước khi ghi đè mask 4D
+            # Điều này giúp Qwen2.5-VL tự sinh ma trận 3D RoPE vị trí chuẩn xác mà không bị lỗi get_rope_index với mask 4D
+            if position_ids is None:
+                position_ids, mrope_position_ids = self.model.get_rope_index(
+                    input_ids=input_ids,
+                    mm_token_type_ids=kwargs.get("mm_token_type_ids"),
+                    image_grid_thw=image_grid_thw,
+                    video_grid_thw=kwargs.get("video_grid_thw"),
+                    second_per_grid_ts=kwargs.get("second_per_grid_ts"),
+                    attention_mask=attention_mask,
+                )
+                kwargs["position_ids"] = position_ids
+                kwargs["mrope_position_ids"] = mrope_position_ids
+
+            # 2. Đè lên trường attention_mask truyền vào transformer
             attention_mask = torch.stack(custom_masks, dim=0).to(dtype=self.dtype)
             
         return original_forward(
             input_ids=input_ids,
             attention_mask=attention_mask,
-            position_ids=position_ids,
+            position_ids=kwargs.get("position_ids", position_ids),
             pixel_values=pixel_values,
             image_grid_thw=image_grid_thw,
             labels=labels,
