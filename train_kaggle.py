@@ -254,8 +254,9 @@ def main():
         if use_lora:
             model.livr_stage = 2
         correct, total = 0, 0
+        log_entries = []
         with torch.no_grad():
-            for item in eval_samples:
+            for i, item in enumerate(eval_samples):
                 conv = item['conversation']
                 conv_for_generation = [msg for msg in conv if msg["role"] == "user"]
                 inputs = prepare_vqa_inputs(
@@ -275,9 +276,28 @@ def main():
                 pred_text = processor.decode(outputs[0][input_len:], skip_special_tokens=True).strip()
                 target_text = str(conv[1]["content"][0]["text"]).strip()
                 
-                if pred_text.lower() == target_text.lower():
+                is_correct = pred_text.lower() == target_text.lower()
+                if is_correct:
                     correct += 1
                 total += 1
+                
+                log_entries.append({
+                    "index": i + 1,
+                    "target": target_text,
+                    "predicted": pred_text,
+                    "correct": is_correct
+                })
+                
+                if i < 5:
+                    suffix = "LIVR" if use_lora else "Base"
+                    print(f"   [{suffix} Sample {i+1}] Correct: {target_text} | Pred: {pred_text} | {'MATCH' if is_correct else 'MISS'}")
+        
+        # Save detailed logs
+        suffix = "livr" if use_lora else "base"
+        detail_path = f"/kaggle/working/train_eval_details_{suffix}.json"
+        with open(detail_path, "w", encoding="utf-8") as f:
+            json.dump(log_entries, f, ensure_ascii=False, indent=2)
+        print(f"➔ Saved sample-by-sample eval logs to: {detail_path}")
         return (correct / total) * 100
 
     livr_acc = evaluate(use_lora=True)
