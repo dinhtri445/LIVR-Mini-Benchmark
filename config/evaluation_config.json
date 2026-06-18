@@ -3,9 +3,9 @@
   "checkpoint_path": "/content/drive/MyDrive/LIVR_Mini_Project/checkpoints/livr_mini_checkpoint.pt",
   "K": 16,
   "eval_datasets": {
-    "visu_logic": {
-      "name": "VisuLogic",
-      "huggingface_path": "visual-spatial-reasoning/VisuLogic",
+    "math_vista": {
+      "name": "MathVista",
+      "huggingface_path": "AI4Math/MathVista",
       "train_samples": 800,
       "val_samples": 100,
       "test_samples": 200
