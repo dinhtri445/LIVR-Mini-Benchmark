@@ -6,21 +6,24 @@
     "math_vista": {
       "name": "MathVista",
       "huggingface_path": "AI4Math/MathVista",
-      "train_samples": 800,
+      "train_samples": 500,
       "val_samples": 100,
       "test_samples": 200
     },
     "cv_bench": {
       "name": "CV-Bench",
       "huggingface_path": "nyu-visionx/CV-Bench",
-      "train_samples": 800,
+      "train_samples": 500,
       "val_samples": 100,
       "test_samples": 200
     }
   },
-  "fine_tune_epochs": 2,
+  "fine_tune_epochs": 5,
+  "livr_stage1_epochs": 2,
+  "livr_stage2_epochs": 3,
   "learning_rate": 5e-05,
   "batch_size_per_device": 1,
   "grad_accumulation_steps": 8,
-  "output_dir": "/content/drive/MyDrive/LIVR_Mini_Project/checkpoints/evaluation"
+  "output_dir": "/content/drive/MyDrive/LIVR_Mini_Project/checkpoints/evaluation",
+  "_comment": "Train 500 mau/dataset (1000 combined). Direct SFT: 5 epochs. LIVR: Stage1=2 epochs (40%) + Stage2=3 epochs (60%) = 5 epochs total. Ty le 2:3 theo paper goc (4:6). Dam bao compute bang nhau giua SFT va LIVR."
 }
