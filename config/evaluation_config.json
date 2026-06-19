@@ -6,14 +6,14 @@
     "math_vista": {
       "name": "MathVista",
       "huggingface_path": "AI4Math/MathVista",
-      "train_samples": 800,
+      "train_samples": 300,
       "val_samples": 100,
       "test_samples": 200
     },
     "cv_bench": {
       "name": "CV-Bench",
       "huggingface_path": "nyu-visionx/CV-Bench",
-      "train_samples": 800,
+      "train_samples": 300,
       "val_samples": 100,
       "test_samples": 200
     }
