@@ -111,6 +111,12 @@ class LIVRModelManager:
                 param.requires_grad = True
             else:
                 param.requires_grad = False
+
+        # QLoRA on Kaggle/T4 may keep LoRA and newly added embedding rows in fp16.
+        # GradScaler refuses to unscale fp16 gradients, so keep trainable tensors in fp32.
+        for name, param in self.model.named_parameters():
+            if param.requires_grad and param.dtype != torch.float32:
+                param.data = param.data.float()
                 
         trainable_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
         all_params = sum(p.numel() for p in self.model.parameters())
