@@ -1,4 +1,5 @@
 # src/mask.py
+import inspect
 import torch
 import types
 
@@ -38,6 +39,25 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
     Monkey-patch hàm forward của Qwen2.5-VL để tự động chèn ma trận mask.
     """
     original_forward = model.forward
+    original_forward_sig = inspect.signature(original_forward)
+    original_forward_params = set(original_forward_sig.parameters)
+    original_forward_accepts_kwargs = any(
+        p.kind == inspect.Parameter.VAR_KEYWORD
+        for p in original_forward_sig.parameters.values()
+    )
+
+    def forward_supports(name):
+        return original_forward_accepts_kwargs or name in original_forward_params
+
+    def get_backbone_with_rope(root):
+        backbone = root
+        visited = set()
+        while hasattr(backbone, "model") and id(backbone) not in visited:
+            if hasattr(backbone, "get_rope_index"):
+                return backbone
+            visited.add(id(backbone))
+            backbone = backbone.model
+        return backbone if hasattr(backbone, "get_rope_index") else None
     
     def livr_forward(
         self,
@@ -69,8 +89,8 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
 
         stage = getattr(self, "livr_stage", 1)
         
-        # Chỉ can thiệp trong quá trình training (khi có labels)
-        if labels is not None and input_ids is not None:
+        # Chỉ can thiệp ở LIVR Stage 1. Direct SFT và Stage 2 dùng forward gốc.
+        if stage == 1 and labels is not None and input_ids is not None:
             # Xác định các mốc vị trí động dựa trên batch
             batch_size, seq_len = input_ids.size()
             device = input_ids.device
@@ -132,26 +152,40 @@ def patch_model_for_livr(model, latent_token_ids, image_pad_token_id, pad_token_
             # 1. Tự động tính toán position_ids bằng 2D attention_mask gốc trước khi ghi đè mask 4D
             # Tìm backbone model (Qwen2_5_VLModel) chứa phương thức get_rope_index
             if position_ids is None:
-                backbone = self
-                if hasattr(backbone, "model"):
-                    backbone = backbone.model
-                    if hasattr(backbone, "model") and not hasattr(backbone, "get_rope_index"):
-                        backbone = backbone.model
-                
-                position_ids, mrope_position_ids = backbone.get_rope_index(
-                    input_ids=input_ids,
-                    mm_token_type_ids=kwargs.get("mm_token_type_ids"),
-                    image_grid_thw=image_grid_thw,
-                    video_grid_thw=kwargs.get("video_grid_thw"),
-                    second_per_grid_ts=kwargs.get("second_per_grid_ts"),
-                    attention_mask=attention_mask,
-                )
+                backbone = get_backbone_with_rope(self)
+                if backbone is None:
+                    raise RuntimeError("Không tìm thấy get_rope_index để tính position_ids cho LIVR mask 4D.")
+
+                sig = inspect.signature(backbone.get_rope_index)
+                rope_kwargs = {
+                    "input_ids": input_ids,
+                    "mm_token_type_ids": kwargs.get("mm_token_type_ids"),
+                    "image_grid_thw": image_grid_thw,
+                    "video_grid_thw": kwargs.get("video_grid_thw"),
+                    "second_per_grid_ts": kwargs.get("second_per_grid_ts"),
+                    "attention_mask": attention_mask,
+                }
+                rope_kwargs = {k: v for k, v in rope_kwargs.items() if k in sig.parameters}
+                rope_outputs = backbone.get_rope_index(**rope_kwargs)
+                if isinstance(rope_outputs, tuple):
+                    position_ids = rope_outputs[0]
+                    rope_deltas = rope_outputs[1] if len(rope_outputs) > 1 else None
+                else:
+                    position_ids = rope_outputs
+                    rope_deltas = None
                 set_arg("position_ids", 2, position_ids)
-                kwargs["mrope_position_ids"] = mrope_position_ids
+                if rope_deltas is not None:
+                    if forward_supports("rope_deltas"):
+                        kwargs["rope_deltas"] = rope_deltas
+                    elif forward_supports("mrope_position_ids"):
+                        kwargs["mrope_position_ids"] = rope_deltas
 
             # 2. Đè lên trường attention_mask truyền vào transformer
             attention_mask = torch.stack(custom_masks, dim=0).to(dtype=self.dtype)
             set_arg("attention_mask", 1, attention_mask)
+
+        if not original_forward_accepts_kwargs:
+            kwargs = {k: v for k, v in kwargs.items() if k in original_forward_params}
             
         return original_forward(*args, **kwargs)
         
