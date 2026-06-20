@@ -48,14 +48,16 @@ class LIVRModelManager:
             self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
                 model_id,
                 quantization_config=bnb_config,
-                device_map="auto" # Tự động phân bổ phân mảnh tối ưu
+                device_map="auto", # Tự động phân bổ phân mảnh tối ưu
+                attn_implementation="sdpa"
             )
         else:
             # Load thông thường ở dạng bfloat16 (dành cho GPU thế hệ mới L4/A100)
             self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
                 model_id,
                 torch_dtype=torch.bfloat16,
-                device_map=device
+                device_map=device,
+                attn_implementation="sdpa"
             )
         
         print(f"Resizing token embeddings to {len(self.processor.tokenizer)}...")
@@ -103,8 +105,9 @@ class LIVRModelManager:
         embed_tokens.weight.register_hook(make_embedding_hook(latent_ids_tensor))
         
         # 3. Đóng băng các thành phần không liên quan
+        embed_tokens_weight = self.model.get_input_embeddings().weight
         for name, param in self.model.named_parameters():
-            if "lora_" in name or name == "base_model.model.model.embed_tokens.weight":
+            if "lora_" in name or param is embed_tokens_weight:
                 param.requires_grad = True
             else:
                 param.requires_grad = False
