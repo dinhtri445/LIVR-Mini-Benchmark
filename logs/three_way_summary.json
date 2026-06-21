@@ -1,0 +1,49 @@
+{
+  "protocol": {
+    "train_samples_per_dataset": 500,
+    "test_samples_per_dataset": 200,
+    "direct_sft_epochs": 5,
+    "livr_stage1_epochs": 2,
+    "livr_stage2_epochs": 3,
+    "split_strategy": "deterministic_stratified_by_dataset_metadata",
+    "prompt_policy": "CV-Bench prompt; MathVista query; dataset task prefix; MC answer aliases"
+  },
+  "zero_shot": {
+    "cv_bench": 68.5,
+    "math_vista": 55.00000000000001
+  },
+  "direct_sft": {
+    "cv_bench": 80.5,
+    "math_vista": 68.0
+  },
+  "livr_stage2": {
+    "cv_bench": 86.0,
+    "math_vista": 65.0
+  },
+  "direct_sft_loss_history": [
+    0.27478518460506335,
+    0.1484588532863756,
+    0.09258882520185502,
+    0.07483547183554923,
+    0.03191928389523597
+  ],
+  "livr_loss_history": [
+    0.44325357118996234,
+    0.3372017130030006,
+    0.1973445402602342,
+    0.12253891849910471,
+    0.06954086046142871
+  ],
+  "livr_sanity": {
+    "CV-Bench": {
+      "Stage 2 (Mở)": 86.0,
+      "Stage 1 (Bịt - Sanity Check)": 68.5,
+      "Sụt giảm": 17.5
+    },
+    "MathVista": {
+      "Stage 2 (Mở)": 65.0,
+      "Stage 1 (Bịt - Sanity Check)": 36.0,
+      "Sụt giảm": 29.0
+    }
+  }
+}

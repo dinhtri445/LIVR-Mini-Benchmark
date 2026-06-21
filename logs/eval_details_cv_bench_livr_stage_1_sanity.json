@@ -1,0 +1,3002 @@
+[
+  {
+    "index": 1,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many plants are in the image? Select from the following choices.\n(A) 0\n(B) 3\n(C) 1\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 2,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the truck (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) truck\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "truck",
+      "(A) truck",
+      "A. truck"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 3,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the chair (highlighted by a red box) or the bottle (highlighted by a blue box)?\n(A) chair\n(B) bottle\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "chair",
+      "(A) chair",
+      "A. chair"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 4,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the bicycle (highlighted by a blue box) or the motorcycle (highlighted by a green box)?\n(A) bicycle\n(B) motorcycle\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "motorcycle",
+      "(B) motorcycle",
+      "B. motorcycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 5,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 1\n(B) 3\n(C) 0\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 6,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many shower screens are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 3\n(D) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "1",
+      "(D) 1",
+      "D. 1"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 7,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the shelves (highlighted by a red box), the lamp (highlighted by a blue box) or the books (highlighted by a green box)?\n(A) lamp\n(B) books\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "lamp",
+      "(A) lamp",
+      "A. lamp"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 8,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many boats are in the image? Select from the following choices.\n(A) 2\n(B) 3\n(C) 1\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 9,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the books (highlighted by a red box) or the desk (highlighted by a blue box)?\n(A) books\n(B) desk\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "books",
+      "(A) books",
+      "A. books"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 10,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the shelves (highlighted by a red box), the desk (highlighted by a blue box) or the books (highlighted by a green box)?\n(A) desk\n(B) books\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "desk",
+      "(A) desk",
+      "A. desk"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 11,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bicycle (highlighted by a red box) or the car (highlighted by a blue box)?\n(A) bicycle\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "car",
+      "(B) car",
+      "B. car"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 12,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many frisbees are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 2\n(D) 3\n(E) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "2",
+      "(C) 2",
+      "C. 2"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 13,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bookcase (highlighted by a red box) or the chair (highlighted by a blue box)?\n(A) bookcase\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "chair",
+      "(B) chair",
+      "B. chair"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 14,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the remote (highlighted by a red box), the cup (highlighted by a blue box) or the books (highlighted by a green box)?\n(A) cup\n(B) books\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "books",
+      "(B) books",
+      "B. books"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 15,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the book (annotated by the red box) and the cat in the image provided, where is the book (annotated by the red box) located with respect to the cat? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 16,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many cars are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 4\n(D) 3\n(E) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "2",
+      "(A) 2",
+      "A. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 17,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many airplanes are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 3\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 18,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many stones are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\n(E) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "2",
+      "(A) 2",
+      "A. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 19,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the sidewalk (annotated by the red box) and the street light in the image provided, where is the sidewalk (annotated by the red box) located with respect to the street light? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 20,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many ovens are in the image? Select from the following choices.\n(A) 3\n(B) 1\n(C) 2\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "1",
+      "(B) 1",
+      "B. 1"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 21,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many cups are in the image? Select from the following choices.\n(A) 3\n(B) 4\n(C) 2\n(D) 1\n(E) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "2",
+      "(C) 2",
+      "C. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 22,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the cell phone in the image provided, where is the person (annotated by the red box) located with respect to the cell phone? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 23,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the clothes (highlighted by a red box), the towel (highlighted by a blue box) or the lamp (highlighted by a green box)?\n(A) towel\n(B) lamp\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "towel",
+      "(A) towel",
+      "A. towel"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 24,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the bicycle (highlighted by a red box), the motorcycle (highlighted by a blue box) or the bus (highlighted by a green box)?\n(A) motorcycle\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "motorcycle",
+      "(A) motorcycle",
+      "A. motorcycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 25,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the wall (annotated by the red box) and the mirror in the image provided, where is the wall (annotated by the red box) located with respect to the mirror? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 26,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the pendant lamp and the bat in the image provided, where is the pendant lamp located with respect to the bat? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 27,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the cow (annotated by the red box) and the sheep in the image provided, where is the cow (annotated by the red box) located with respect to the sheep? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 28,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many clocks are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 2\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 29,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the sidewalk (annotated by the red box) and the clock in the image provided, where is the sidewalk (annotated by the red box) located with respect to the clock? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 30,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the tennis racket in the image provided, where is the person (annotated by the red box) located with respect to the tennis racket? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 31,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the duvet and the light switch in the image provided, where is the duvet located with respect to the light switch? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 32,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the box (highlighted by a red box), the monitor (highlighted by a blue box) or the chair (highlighted by a green box)?\n(A) monitor\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "chair",
+      "(B) chair",
+      "B. chair"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 33,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the pedestrian (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) pedestrian\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "pedestrian",
+      "(A) pedestrian",
+      "A. pedestrian"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 34,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many handbags are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 4\n(D) 2\n(E) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "2",
+      "(D) 2",
+      "D. 2"
+    ],
+    "model_prediction": "(E)",
+    "is_correct": false
+  },
+  {
+    "index": 35,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the sofa (highlighted by a red box) or the television (highlighted by a blue box)?\n(A) sofa\n(B) television\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "television",
+      "(B) television",
+      "B. television"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 36,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bicycle (highlighted by a red box) or the car (highlighted by a blue box)?\n(A) bicycle\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "bicycle",
+      "(A) bicycle",
+      "A. bicycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 37,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the pole (annotated by the red box) and the road in the image provided, where is the pole (annotated by the red box) located with respect to the road? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 38,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the shelves (highlighted by a red box), the desk (highlighted by a blue box) or the books (highlighted by a green box)?\n(A) desk\n(B) books\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "desk",
+      "(A) desk",
+      "A. desk"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 39,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many fire hydrants are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 3\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 40,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the stationery (highlighted by a red box) or the bag (highlighted by a blue box)?\n(A) stationery\n(B) bag\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "stationery",
+      "(A) stationery",
+      "A. stationery"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 41,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many cats are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 2\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 42,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the night stand (highlighted by a red box), the lamp (highlighted by a blue box) or the painting (highlighted by a green box)?\n(A) lamp\n(B) painting\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "lamp",
+      "(A) lamp",
+      "A. lamp"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 43,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many sidewalks are in the image? Select from the following choices.\n(A) 1\n(B) 2\n(C) 0\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 44,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many dogs are in the image? Select from the following choices.\n(A) 2\n(B) 1\n(C) 0\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "1",
+      "(B) 1",
+      "B. 1"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 45,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the barrier (highlighted by a red box) or the pedestrian (highlighted by a blue box)?\n(A) barrier\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "barrier",
+      "(A) barrier",
+      "A. barrier"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 46,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 2\n(B) 3\n(C) 1\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 47,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many zebras are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 3\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": false
+  },
+  {
+    "index": 48,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the car (highlighted by a red box) or the pedestrian (highlighted by a blue box)?\n(A) car\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "pedestrian",
+      "(B) pedestrian",
+      "B. pedestrian"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 49,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the mouse and the bottle in the image provided, where is the mouse located with respect to the bottle? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 50,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the traffic cone (highlighted by a red box) or the pedestrian (highlighted by a blue box)?\n(A) traffic cone\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "traffic cone",
+      "(A) traffic cone",
+      "A. traffic cone"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 51,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many mountains are in the image? Select from the following choices.\n(A) 1\n(B) 2\n(C) 0\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 52,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the television (highlighted by a blue box) or the sofa (highlighted by a green box)?\n(A) television\n(B) sofa\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "sofa",
+      "(B) sofa",
+      "B. sofa"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 53,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the road and the bench in the image provided, where is the road located with respect to the bench? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 54,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the traffic cone (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) traffic cone\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "bus",
+      "(B) bus",
+      "B. bus"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 55,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bicycle (highlighted by a red box) or the motorcycle (highlighted by a blue box)?\n(A) bicycle\n(B) motorcycle\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "bicycle",
+      "(A) bicycle",
+      "A. bicycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 56,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the pedestrian (highlighted by a red box), the barrier (highlighted by a blue box) or the car (highlighted by a green box)?\n(A) barrier\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "car",
+      "(B) car",
+      "B. car"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 57,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the chair (highlighted by a red box), the door (highlighted by a blue box) or the refrigerator (highlighted by a green box)?\n(A) door\n(B) refrigerator\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "refrigerator",
+      "(B) refrigerator",
+      "B. refrigerator"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 58,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the spoon (annotated by the red box) and the bowl in the image provided, where is the spoon (annotated by the red box) located with respect to the bowl? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 59,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the bottle (annotated by the red box) and the vase in the image provided, where is the bottle (annotated by the red box) located with respect to the vase? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 60,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 3\n(B) 2\n(C) 0\n(D) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "1",
+      "(D) 1",
+      "D. 1"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 61,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the wine glass (annotated by the red box) and the cake in the image provided, where is the wine glass (annotated by the red box) located with respect to the cake? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 62,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many computer cases are in the image? Select from the following choices.\n(A) 1\n(B) 3\n(C) 0\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 63,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the building (annotated by the red box) and the palm tree in the image provided, where is the building (annotated by the red box) located with respect to the palm tree? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 64,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the sofa (highlighted by a red box) or the door (highlighted by a blue box)?\n(A) sofa\n(B) door\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "door",
+      "(B) door",
+      "B. door"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 65,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the door (highlighted by a red box) or the lamp (highlighted by a blue box)?\n(A) door\n(B) lamp\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "lamp",
+      "(B) lamp",
+      "B. lamp"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 66,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the picture (highlighted by a blue box) or the chair (highlighted by a green box)?\n(A) picture\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "picture",
+      "(A) picture",
+      "A. picture"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 67,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many trains are in the image? Select from the following choices.\n(A) 3\n(B) 0\n(C) 2\n(D) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "1",
+      "(D) 1",
+      "D. 1"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 68,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the jar (annotated by the red box) and the window in the image provided, where is the jar (annotated by the red box) located with respect to the window? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 69,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the motorcycle (highlighted by a red box), the car (highlighted by a blue box) or the pedestrian (highlighted by a green box)?\n(A) car\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "car",
+      "(A) car",
+      "A. car"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 70,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many zebras are in the image? Select from the following choices.\n(A) 3\n(B) 2\n(C) 1\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 71,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the night stand (highlighted by a blue box) or the table (highlighted by a green box)?\n(A) night stand\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "table",
+      "(B) table",
+      "B. table"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 72,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the helicopter in the image provided, where is the person (annotated by the red box) located with respect to the helicopter? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 73,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the wall (annotated by the red box) and the clock in the image provided, where is the wall (annotated by the red box) located with respect to the clock? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 74,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person and the dog in the image provided, where is the person located with respect to the dog? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 75,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many skateboards are in the image? Select from the following choices.\n(A) 2\n(B) 4\n(C) 1\n(D) 0\n(E) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "2",
+      "(A) 2",
+      "A. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 76,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bus (highlighted by a red box) or the barrier (highlighted by a blue box)?\n(A) bus\n(B) barrier\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "bus",
+      "(A) bus",
+      "A. bus"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 77,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many sports balls are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 3\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 78,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the car (highlighted by a red box) or the traffic cone (highlighted by a blue box)?\n(A) car\n(B) traffic cone\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "traffic cone",
+      "(B) traffic cone",
+      "B. traffic cone"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 79,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the kettle and the work surface in the image provided, where is the kettle located with respect to the work surface? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 80,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the box (highlighted by a red box) or the chair (highlighted by a blue box)?\n(A) box\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "chair",
+      "(B) chair",
+      "B. chair"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 81,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the books (highlighted by a red box), the lamp (highlighted by a blue box) or the table (highlighted by a green box)?\n(A) lamp\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "lamp",
+      "(A) lamp",
+      "A. lamp"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 82,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many sofas are in the image? Select from the following choices.\n(A) 3\n(B) 2\n(C) 0\n(D) 1\n(E) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "2",
+      "(B) 2",
+      "B. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 83,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many airplanes are in the image? Select from the following choices.\n(A) 3\n(B) 0\n(C) 1\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 84,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the mouse (annotated by the red box) and the potted plant in the image provided, where is the mouse (annotated by the red box) located with respect to the potted plant? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 85,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the desk (highlighted by a red box) or the chair (highlighted by a blue box)?\n(A) desk\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "desk",
+      "(A) desk",
+      "A. desk"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 86,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the truck (highlighted by a blue box) or the trailer (highlighted by a green box)?\n(A) truck\n(B) trailer\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "trailer",
+      "(B) trailer",
+      "B. trailer"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 87,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the traffic cone (highlighted by a red box), the trailer (highlighted by a blue box) or the truck (highlighted by a green box)?\n(A) trailer\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "truck",
+      "(B) truck",
+      "B. truck"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 88,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many giraffes are in the image? Select from the following choices.\n(A) 2\n(B) 3\n(C) 1\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 89,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many handrails are in the image? Select from the following choices.\n(A) 0\n(B) 4\n(C) 2\n(D) 1\n(E) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "1",
+      "(D) 1",
+      "D. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 90,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many mouses are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 91,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 2\n(B) 4\n(C) 1\n(D) 0\n(E) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "2",
+      "(A) 2",
+      "A. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 92,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the motorcycle (highlighted by a red box), the bus (highlighted by a blue box) or the car (highlighted by a green box)?\n(A) bus\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "car",
+      "(B) car",
+      "B. car"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 93,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 1\n(B) 3\n(C) 0\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 94,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the television (highlighted by a red box), the table (highlighted by a blue box) or the sofa (highlighted by a green box)?\n(A) table\n(B) sofa\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "table",
+      "(A) table",
+      "A. table"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 95,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many buckets are in the image? Select from the following choices.\n(A) 1\n(B) 3\n(C) 0\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "0",
+      "(C) 0",
+      "C. 0"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 96,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many zebras are in the image? Select from the following choices.\n(A) 0\n(B) 2\n(C) 1\n(D) 3\n(E) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "2",
+      "(B) 2",
+      "B. 2"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 97,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many bears are in the image? Select from the following choices.\n(A) 1\n(B) 2\n(C) 4\n(D) 3\n(E) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "2",
+      "(B) 2",
+      "B. 2"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 98,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the television (highlighted by a blue box) or the table (highlighted by a green box)?\n(A) television\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "table",
+      "(B) table",
+      "B. table"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 99,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 0\n(B) 5\n(C) 7\n(D) 3\n(E) 4\n(F) 6\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "5",
+      "(B) 5",
+      "B. 5"
+    ],
+    "model_prediction": "(F)",
+    "is_correct": false
+  },
+  {
+    "index": 100,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many bowls are in the image? Select from the following choices.\n(A) 3\n(B) 2\n(C) 0\n(D) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "1",
+      "(D) 1",
+      "D. 1"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 101,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many bears are in the image? Select from the following choices.\n(A) 2\n(B) 3\n(C) 0\n(D) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "1",
+      "(D) 1",
+      "D. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 102,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the motorcycle (highlighted by a blue box) or the pedestrian (highlighted by a green box)?\n(A) motorcycle\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "motorcycle",
+      "(A) motorcycle",
+      "A. motorcycle"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 103,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many light switchs are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 2\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 104,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many sinks are in the image? Select from the following choices.\n(A) 1\n(B) 3\n(C) 2\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 105,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many walls are in the image? Select from the following choices.\n(A) 3\n(B) 5\n(C) 1\n(D) 0\n(E) 2\n(F) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "3",
+      "(A) 3",
+      "A. 3"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 106,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the bus (highlighted by a red box), the truck (highlighted by a blue box) or the trailer (highlighted by a green box)?\n(A) truck\n(B) trailer\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "truck",
+      "(A) truck",
+      "A. truck"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 107,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the pillow (annotated by the red box) and the blind in the image provided, where is the pillow (annotated by the red box) located with respect to the blind? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 108,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the umbrella (annotated by the red box) and the bird in the image provided, where is the umbrella (annotated by the red box) located with respect to the bird? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 109,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the motorcycle (highlighted by a red box) or the truck (highlighted by a blue box)?\n(A) motorcycle\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "motorcycle",
+      "(A) motorcycle",
+      "A. motorcycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 110,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the box (highlighted by a red box), the books (highlighted by a blue box) or the stationery (highlighted by a green box)?\n(A) books\n(B) stationery\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "books",
+      "(A) books",
+      "A. books"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 111,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the bottle and the cell phone in the image provided, where is the bottle located with respect to the cell phone? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 112,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many walls are in the image? Select from the following choices.\n(A) 0\n(B) 3\n(C) 2\n(D) 4\n(E) 1\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "2",
+      "(C) 2",
+      "C. 2"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 113,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the bottle and the wine glass in the image provided, where is the bottle located with respect to the wine glass? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 114,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the building (annotated by the red box) and the skyscraper in the image provided, where is the building (annotated by the red box) located with respect to the skyscraper? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 115,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the printer (highlighted by a red box), the monitor (highlighted by a blue box) or the chair (highlighted by a green box)?\n(A) monitor\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "monitor",
+      "(A) monitor",
+      "A. monitor"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 116,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the books (highlighted by a red box), the sofa (highlighted by a blue box) or the television (highlighted by a green box)?\n(A) sofa\n(B) television\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "sofa",
+      "(A) sofa",
+      "A. sofa"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 117,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many vases are in the image? Select from the following choices.\n(A) 1\n(B) 3\n(C) 2\n(D) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 118,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the mouse (highlighted by a red box), the keyboard (highlighted by a blue box) or the picture (highlighted by a green box)?\n(A) keyboard\n(B) picture\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "keyboard",
+      "(A) keyboard",
+      "A. keyboard"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 119,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the book (annotated by the red box) and the remote in the image provided, where is the book (annotated by the red box) located with respect to the remote? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 120,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many persons are in the image? Select from the following choices.\n(A) 4\n(B) 5\n(C) 0\n(D) 6\n(E) 3\n(F) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "4",
+      "(A) 4",
+      "A. 4"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 121,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the fireplace (highlighted by a red box) or the table (highlighted by a blue box)?\n(A) fireplace\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "table",
+      "(B) table",
+      "B. table"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 122,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many motorbikes are in the image? Select from the following choices.\n(A) 3\n(B) 4\n(C) 1\n(D) 2\n(E) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "2",
+      "(D) 2",
+      "D. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 123,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the window and the trash can in the image provided, where is the window located with respect to the trash can? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 124,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many dogs are in the image? Select from the following choices.\n(A) 4\n(B) 1\n(C) 0\n(D) 2\n(E) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "2",
+      "(D) 2",
+      "D. 2"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 125,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the monitor (highlighted by a red box), the bin (highlighted by a blue box) or the printer (highlighted by a green box)?\n(A) bin\n(B) printer\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "printer",
+      "(B) printer",
+      "B. printer"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 126,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the bottle (highlighted by a red box), the box (highlighted by a blue box) or the cup (highlighted by a green box)?\n(A) box\n(B) cup\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "cup",
+      "(B) cup",
+      "B. cup"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 127,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the lamp (highlighted by a red box) or the blinds (highlighted by a blue box)?\n(A) lamp\n(B) blinds\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "lamp",
+      "(A) lamp",
+      "A. lamp"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 128,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many traffic lights are in the image? Select from the following choices.\n(A) 3\n(B) 5\n(C) 2\n(D) 1\n(E) 4\n(F) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "3",
+      "(A) 3",
+      "A. 3"
+    ],
+    "model_prediction": "(E)",
+    "is_correct": false
+  },
+  {
+    "index": 129,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the lamp (highlighted by a red box) or the chair (highlighted by a blue box)?\n(A) lamp\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "chair",
+      "(B) chair",
+      "B. chair"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 130,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bookcase (highlighted by a red box) or the table (highlighted by a blue box)?\n(A) bookcase\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "table",
+      "(B) table",
+      "B. table"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 131,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the sofa (highlighted by a red box) or the television (highlighted by a blue box)?\n(A) sofa\n(B) television\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "sofa",
+      "(A) sofa",
+      "A. sofa"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 132,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many benchs are in the image? Select from the following choices.\n(A) 6\n(B) 2\n(C) 5\n(D) 3\n(E) 0\n(F) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(F)",
+    "original_ground_truth": "(F)",
+    "answer_aliases": [
+      "(F)",
+      "F",
+      "4",
+      "(F) 4",
+      "F. 4"
+    ],
+    "model_prediction": "(F)",
+    "is_correct": true
+  },
+  {
+    "index": 133,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the door (highlighted by a red box) or the lamp (highlighted by a blue box)?\n(A) door\n(B) lamp\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "lamp",
+      "(B) lamp",
+      "B. lamp"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 134,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the baseball bat in the image provided, where is the person (annotated by the red box) located with respect to the baseball bat? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 135,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many buss are in the image? Select from the following choices.\n(A) 3\n(B) 1\n(C) 0\n(D) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "1",
+      "(B) 1",
+      "B. 1"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 136,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the vase (annotated by the red box) and the bed in the image provided, where is the vase (annotated by the red box) located with respect to the bed? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 137,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the light troffer (annotated by the red box) and the staircase in the image provided, where is the light troffer (annotated by the red box) located with respect to the staircase? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 138,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the plant (annotated by the red box) and the staircase in the image provided, where is the plant (annotated by the red box) located with respect to the staircase? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 139,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the dresser (highlighted by a blue box) or the night stand (highlighted by a green box)?\n(A) dresser\n(B) night stand\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "night stand",
+      "(B) night stand",
+      "B. night stand"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 140,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the sink and the hair drier in the image provided, where is the sink located with respect to the hair drier? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 141,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many apples are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "2",
+      "(A) 2",
+      "A. 2"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 142,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the sign and the traffic light in the image provided, where is the sign located with respect to the traffic light? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 143,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the stationery (highlighted by a red box) or the bin (highlighted by a blue box)?\n(A) stationery\n(B) bin\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "stationery",
+      "(A) stationery",
+      "A. stationery"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 144,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many sidewalks are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 145,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the bowl (annotated by the red box) and the broccoli in the image provided, where is the bowl (annotated by the red box) located with respect to the broccoli? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 146,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the street light and the trash can in the image provided, where is the street light located with respect to the trash can? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 147,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bookcase (highlighted by a red box) or the chair (highlighted by a blue box)?\n(A) bookcase\n(B) chair\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "chair",
+      "(B) chair",
+      "B. chair"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 148,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the table (highlighted by a red box) or the painting (highlighted by a blue box)?\n(A) table\n(B) painting\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "table",
+      "(A) table",
+      "A. table"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 149,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the fire hydrant and the bench in the image provided, where is the fire hydrant located with respect to the bench? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 150,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the bird (annotated by the red box) and the boat in the image provided, where is the bird (annotated by the red box) located with respect to the boat? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 151,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the board (highlighted by a red box), the tissues (highlighted by a blue box) or the drawers (highlighted by a green box)?\n(A) tissues\n(B) drawers\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "drawers",
+      "(B) drawers",
+      "B. drawers"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 152,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the truck (highlighted by a red box), the traffic cone (highlighted by a blue box) or the car (highlighted by a green box)?\n(A) traffic cone\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "car",
+      "(B) car",
+      "B. car"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 153,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bicycle (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) bicycle\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "bicycle",
+      "(A) bicycle",
+      "A. bicycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 154,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the traffic cone (highlighted by a red box) or the truck (highlighted by a blue box)?\n(A) traffic cone\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "traffic cone",
+      "(A) traffic cone",
+      "A. traffic cone"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 155,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the motorcycle (highlighted by a red box) or the pedestrian (highlighted by a blue box)?\n(A) motorcycle\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "pedestrian",
+      "(B) pedestrian",
+      "B. pedestrian"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 156,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the bus (highlighted by a red box) or the truck (highlighted by a blue box)?\n(A) bus\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "bus",
+      "(A) bus",
+      "A. bus"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 157,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the chair (highlighted by a red box) or the shelves (highlighted by a blue box)?\n(A) chair\n(B) shelves\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "chair",
+      "(A) chair",
+      "A. chair"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 158,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many chairs are in the image? Select from the following choices.\n(A) 3\n(B) 6\n(C) 0\n(D) 5\n(E) 4\n(F) 7\nAnswer with the option letter directly.",
+    "ground_truth": "(D)",
+    "original_ground_truth": "(D)",
+    "answer_aliases": [
+      "(D)",
+      "D",
+      "5",
+      "(D) 5",
+      "D. 5"
+    ],
+    "model_prediction": "(E)",
+    "is_correct": false
+  },
+  {
+    "index": 159,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many cats are in the image? Select from the following choices.\n(A) 2\n(B) 1\n(C) 0\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "1",
+      "(B) 1",
+      "B. 1"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 160,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many pillows are in the image? Select from the following choices.\n(A) 0\n(B) 3\n(C) 1\n(D) 2\n(E) 4\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "3",
+      "(B) 3",
+      "B. 3"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 161,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many irons are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 162,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the motorcycle (highlighted by a blue box) or the bicycle (highlighted by a green box)?\n(A) motorcycle\n(B) bicycle\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "motorcycle",
+      "(A) motorcycle",
+      "A. motorcycle"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 163,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the car (highlighted by a red box) or the motorcycle (highlighted by a blue box)?\n(A) car\n(B) motorcycle\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "motorcycle",
+      "(B) motorcycle",
+      "B. motorcycle"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 164,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the sports ball and the baseball bat in the image provided, where is the sports ball located with respect to the baseball bat? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 165,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the table (highlighted by a red box), the television (highlighted by a blue box) or the lamp (highlighted by a green box)?\n(A) television\n(B) lamp\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "lamp",
+      "(B) lamp",
+      "B. lamp"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 166,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the truck (highlighted by a red box), the bus (highlighted by a blue box) or the car (highlighted by a green box)?\n(A) bus\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "car",
+      "(B) car",
+      "B. car"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 167,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the bicycle (highlighted by a blue box) or the bus (highlighted by a green box)?\n(A) bicycle\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "bicycle",
+      "(A) bicycle",
+      "A. bicycle"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 168,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the refrigerator (highlighted by a red box) or the table (highlighted by a blue box)?\n(A) refrigerator\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "table",
+      "(B) table",
+      "B. table"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 169,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many houses are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 170,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the pillow (highlighted by a red box), the lamp (highlighted by a blue box) or the door (highlighted by a green box)?\n(A) lamp\n(B) door\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "lamp",
+      "(A) lamp",
+      "A. lamp"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 171,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the bus (highlighted by a blue box) or the traffic cone (highlighted by a green box)?\n(A) bus\n(B) traffic cone\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "traffic cone",
+      "(B) traffic cone",
+      "B. traffic cone"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 172,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the vase (annotated by the red box) and the sofa in the image provided, where is the vase (annotated by the red box) located with respect to the sofa? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 173,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the car in the image provided, where is the person (annotated by the red box) located with respect to the car? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 174,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the pedestrian (highlighted by a red box), the motorcycle (highlighted by a blue box) or the car (highlighted by a green box)?\n(A) motorcycle\n(B) car\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "car",
+      "(B) car",
+      "B. car"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 175,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the door (highlighted by a blue box) or the books (highlighted by a green box)?\n(A) door\n(B) books\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "books",
+      "(B) books",
+      "B. books"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 176,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many horses are in the image? Select from the following choices.\n(A) 1\n(B) 2\n(C) 0\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "1",
+      "(A) 1",
+      "A. 1"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 177,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the sink and the bathtub in the image provided, where is the sink located with respect to the bathtub? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "above",
+      "(A) above",
+      "A. above"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 178,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many paths are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "1",
+      "(C) 1",
+      "C. 1"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 179,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the lamp (highlighted by a red box), the books (highlighted by a blue box) or the television (highlighted by a green box)?\n(A) books\n(B) television\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "books",
+      "(A) books",
+      "A. books"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 180,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the car (highlighted by a red box) or the trailer (highlighted by a blue box)?\n(A) car\n(B) trailer\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "car",
+      "(A) car",
+      "A. car"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 181,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the car (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) car\n(B) bus\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "bus",
+      "(B) bus",
+      "B. bus"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 182,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the bicycle (highlighted by a red box), the car (highlighted by a blue box) or the pedestrian (highlighted by a green box)?\n(A) car\n(B) pedestrian\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "pedestrian",
+      "(B) pedestrian",
+      "B. pedestrian"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 183,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the backpack (annotated by the red box) and the truck in the image provided, where is the backpack (annotated by the red box) located with respect to the truck? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 184,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many beds are in the image? Select from the following choices.\n(A) 4\n(B) 3\n(C) 2\n(D) 1\n(E) 0\nAnswer with the option letter directly.",
+    "ground_truth": "(C)",
+    "original_ground_truth": "(C)",
+    "answer_aliases": [
+      "(C)",
+      "C",
+      "2",
+      "(C) 2",
+      "C. 2"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 185,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the table (highlighted by a red box) or the television (highlighted by a blue box)?\n(A) table\n(B) television\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "table",
+      "(A) table",
+      "A. table"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 186,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the truck in the image provided, where is the person (annotated by the red box) located with respect to the truck? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 187,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the books (highlighted by a red box), the door (highlighted by a blue box) or the table (highlighted by a green box)?\n(A) door\n(B) table\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "table",
+      "(B) table",
+      "B. table"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 188,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the pedestrian (highlighted by a red box) or the truck (highlighted by a blue box)?\n(A) pedestrian\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "truck",
+      "(B) truck",
+      "B. truck"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 189,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the tray (highlighted by a red box) or the box (highlighted by a blue box)?\n(A) tray\n(B) box\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "tray",
+      "(A) tray",
+      "A. tray"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 190,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the dog and the person in the image provided, where is the dog located with respect to the person? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 191,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the car (highlighted by a red box) or the truck (highlighted by a blue box)?\n(A) car\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "car",
+      "(A) car",
+      "A. car"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 192,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the trailer (highlighted by a red box) or the truck (highlighted by a blue box)?\n(A) trailer\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "trailer",
+      "(A) trailer",
+      "A. trailer"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 193,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the lamp (highlighted by a red box) or the pillow (highlighted by a blue box)?\n(A) lamp\n(B) pillow\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "pillow",
+      "(B) pillow",
+      "B. pillow"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 194,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nWhich object is closer to the camera taking this photo, the truck (highlighted by a red box) or the trailer (highlighted by a blue box)?\n(A) truck\n(B) trailer\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "truck",
+      "(A) truck",
+      "A. truck"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 195,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nHow many microphones are in the image? Select from the following choices.\n(A) 1\n(B) 0\n(C) 3\n(D) 4\n(E) 2\nAnswer with the option letter directly.",
+    "ground_truth": "(E)",
+    "original_ground_truth": "(E)",
+    "answer_aliases": [
+      "(E)",
+      "E",
+      "2",
+      "(E) 2",
+      "E. 2"
+    ],
+    "model_prediction": "(E)",
+    "is_correct": true
+  },
+  {
+    "index": 196,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the person (annotated by the red box) and the suitcase in the image provided, where is the person (annotated by the red box) located with respect to the suitcase? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "right",
+      "(B) right",
+      "B. right"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 197,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the dog and the bottle in the image provided, where is the dog located with respect to the bottle? Select from the following choices.\n(A) left\n(B) right\nAnswer with the option letter directly.",
+    "ground_truth": "(A)",
+    "original_ground_truth": "(A)",
+    "answer_aliases": [
+      "(A)",
+      "A",
+      "left",
+      "(A) left",
+      "A. left"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 198,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the barrier (highlighted by a blue box) or the truck (highlighted by a green box)?\n(A) barrier\n(B) truck\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "truck",
+      "(B) truck",
+      "B. truck"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 199,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nConsidering the relative positions of the plant (annotated by the red box) and the sign in the image provided, where is the plant (annotated by the red box) located with respect to the sign? Select from the following choices.\n(A) above\n(B) below\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "below",
+      "(B) below",
+      "B. below"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 200,
+    "question": "[Task: Spatial Choice] Answer with the option letter only, e.g. (A) or (B). Do not explain.\nEstimate the real-world distances between objects in this image. Which object is closer to the monitor (highlighted by a red box), the chair (highlighted by a blue box) or the stationery (highlighted by a green box)?\n(A) chair\n(B) stationery\nAnswer with the option letter directly.",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(B)",
+    "answer_aliases": [
+      "(B)",
+      "B",
+      "stationery",
+      "(B) stationery",
+      "B. stationery"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  }
+]

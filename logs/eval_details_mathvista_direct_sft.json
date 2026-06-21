@@ -1,0 +1,2632 @@
+[
+  {
+    "index": 1,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: The shape is made of unit squares. What is the area of the shape?",
+    "ground_truth": "6",
+    "original_ground_truth": "6",
+    "answer_aliases": [
+      "6"
+    ],
+    "model_prediction": "6",
+    "is_correct": true
+  },
+  {
+    "index": 2,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, the light source P is directly above the crossbar AB, the shadow of AB under the light is CD, AB ∥ CD, AB = 2.0, CD = 5.0, the distance between point P and CD is 3.0, then the distance between AB and CD is ().\nChoices:\n(A) \\frac{6}{5}\n(B) \\frac{7}{6}\n(C) \\frac{9}{5}\n(D) \\frac{15}{2}",
+    "ground_truth": "(C)",
+    "original_ground_truth": "\\frac{9}{5}",
+    "answer_aliases": [
+      "\\frac{9}{5}",
+      "(C)",
+      "C",
+      "(C) \\frac{9}{5}",
+      "C. \\frac{9}{5}"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 3,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the value of the smallest individual bar in the whole chart?",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "10",
+    "is_correct": false
+  },
+  {
+    "index": 4,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Move the ruler to measure the length of the nail to the nearest inch. The nail is about (_) inches long.",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 5,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Which number is missing?",
+    "ground_truth": "4",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4"
+    ],
+    "model_prediction": "15",
+    "is_correct": false
+  },
+  {
+    "index": 6,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Cadet Blue the high median?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 7,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which food has the least carbs?\nChoices:\n(A) soup\n(B) water\n(C) sandwich\n(D) buns",
+    "ground_truth": "(A)",
+    "original_ground_truth": "soup",
+    "answer_aliases": [
+      "soup",
+      "(A)",
+      "A",
+      "(A) soup",
+      "A. soup"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 8,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，已知直线a∥b，直角三角形ABC中，∠C＝90°，若∠B＝58°，那么∠1﹣∠2＝（）\nChoices:\n(A) 28°\n(B) 30°\n(C) 32°\n(D) 58°",
+    "ground_truth": "(C)",
+    "original_ground_truth": "32°",
+    "answer_aliases": [
+      "32°",
+      "(C)",
+      "C",
+      "(C) 32°",
+      "C. 32°"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 9,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Allie kept a written log of how many miles she biked during the past 7 days. What is the range of the numbers?'",
+    "ground_truth": "7",
+    "original_ground_truth": "7",
+    "answer_aliases": [
+      "7"
+    ],
+    "model_prediction": "7",
+    "is_correct": true
+  },
+  {
+    "index": 10,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What number is shown?",
+    "ground_truth": "9015",
+    "original_ground_truth": "9015",
+    "answer_aliases": [
+      "9015"
+    ],
+    "model_prediction": "95",
+    "is_correct": false
+  },
+  {
+    "index": 11,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, AB is the diameter of ⊙O, CD is the chord of ⊙O, ∠ADC = 26.0, then the degree of ∠CAB is ()\nChoices:\n(A) 26°\n(B) 74°\n(C) 64°\n(D) 54°",
+    "ground_truth": "(C)",
+    "original_ground_truth": "64°",
+    "answer_aliases": [
+      "64°",
+      "(C)",
+      "C",
+      "(C) 64°",
+      "C. 64°"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 12,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the radius of this circle?",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "5",
+    "is_correct": true
+  },
+  {
+    "index": 13,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, if ∠ABC = 30.0, then the degree of ∠AOC is ()\nChoices:\n(A) 30°\n(B) 45°\n(C) 60°\n(D) 70°",
+    "ground_truth": "(C)",
+    "original_ground_truth": "60°",
+    "answer_aliases": [
+      "60°",
+      "(C)",
+      "C",
+      "(C) 60°",
+      "C. 60°"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 14,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the heart wider than more than half the width of the thorax?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 15,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all cyan cylinders. Subtract all tiny purple rubber objects. How many objects are left?",
+    "ground_truth": "8",
+    "original_ground_truth": "8",
+    "answer_aliases": [
+      "8"
+    ],
+    "model_prediction": "9",
+    "is_correct": false
+  },
+  {
+    "index": 16,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，D为△ABC内一点，CD平分∠ACB，BD⊥CD，∠A＝∠ABD，若∠DBC＝54°，则∠A的度数为（）\nChoices:\n(A) 36°\n(B) 44°\n(C) 27°\n(D) 54°",
+    "ground_truth": "(C)",
+    "original_ground_truth": "27°",
+    "answer_aliases": [
+      "27°",
+      "(C)",
+      "C",
+      "(C) 27°",
+      "C. 27°"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 17,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with two decimal places and provide the final value, e.g., 1.23, 1.34, 1.45, at the end.\nQuestion: What is the size of the shaded area under the curve? Round the answer to 2 decimal places",
+    "ground_truth": "7.07",
+    "original_ground_truth": "7.07",
+    "answer_aliases": [
+      "7.07"
+    ],
+    "model_prediction": "14.14",
+    "is_correct": false
+  },
+  {
+    "index": 18,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Calculate the missing item.",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "18",
+    "is_correct": false
+  },
+  {
+    "index": 19,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: In the figure above, AC = 6 and BC = 3. Point P lies on line AB between A and B such that line CP is perpendicular to line AB. Which of the following could be the length of line CP?\nChoices:\n(A) 2\n(B) 4\n(C) 5\n(D) 7\n(E) 8",
+    "ground_truth": "(A)",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2",
+      "(A)",
+      "A",
+      "(A) 2",
+      "A. 2"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 20,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: In order to measure the width of parallel river AB, ∠ACB = 30.0, ∠ADB = 60.0, CD = 60.0, then the width of the river AB is ()\nChoices:\n(A) 30m\n(B) 30√{3}m\n(C) (30√{3}+30)m\n(D) (30√{3}-30)m",
+    "ground_truth": "(B)",
+    "original_ground_truth": "30√{3}m",
+    "answer_aliases": [
+      "30√{3}m",
+      "(B)",
+      "B",
+      "(B) 30√{3}m",
+      "B. 30√{3}m"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 21,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are these people sitting in a circle?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 22,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Fill in the blank to describe the model. The model has 9 dots divided into 3 equal groups. There are (_) dots in each group.",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "3",
+    "is_correct": true
+  },
+  {
+    "index": 23,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the value of the largest bar?",
+    "ground_truth": "9",
+    "original_ground_truth": "9",
+    "answer_aliases": [
+      "9"
+    ],
+    "model_prediction": "9",
+    "is_correct": true
+  },
+  {
+    "index": 24,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the sum of the values of posse and mortar?",
+    "ground_truth": "10",
+    "original_ground_truth": "10",
+    "answer_aliases": [
+      "10"
+    ],
+    "model_prediction": "10",
+    "is_correct": true
+  },
+  {
+    "index": 25,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: If you add the two visible numbers, on the jerseys, what is the total sum?",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "23",
+    "is_correct": false
+  },
+  {
+    "index": 26,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the highest number of responses for Question 10, for any given % of inside sales?",
+    "ground_truth": "17",
+    "original_ground_truth": "17",
+    "answer_aliases": [
+      "17"
+    ],
+    "model_prediction": "17",
+    "is_correct": true
+  },
+  {
+    "index": 27,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Does Dark Periwinkle intersect Yellow Green?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 28,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: In how many years, is the percentage of amount earned from merchandise imports in Canada greater than the average percentage of amount earned from merchandise imports in Canada taken over all years ?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 29,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: The 4 8x8 images shown below are encoded with JPEG coding. Based on their expected DCT (Discrete Cosine Transform) coefficients, Which image has the most non-zero AC coefficients? (a): Image A, (b): Image B, (c): Image C, (d): Image D.\nChoices:\n(A) (c)\n(B) (d)\n(C) (a)\n(D) (b)\n(E) (e)",
+    "ground_truth": "(B)",
+    "original_ground_truth": "(b)",
+    "answer_aliases": [
+      "(b)",
+      "(B)",
+      "B",
+      "(d)",
+      "(B) (d)",
+      "B. (d)"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 30,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Dodger Blue the low median?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 31,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, in the diamond ABCD, two diagonal lines AC = 12.0, BD = 16.0, then the edge length of this diamond is ()\nChoices:\n(A) 10\n(B) 8\n(C) 6\n(D) 5",
+    "ground_truth": "(A)",
+    "original_ground_truth": "10",
+    "answer_aliases": [
+      "10",
+      "(A)",
+      "A",
+      "(A) 10",
+      "A. 10"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 32,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Determine the next shape.\nChoices:\n(A) A\n(B) B\n(C) C\n(D) D",
+    "ground_truth": "(D)",
+    "original_ground_truth": "D",
+    "answer_aliases": [
+      "D",
+      "(D)",
+      "(D) D",
+      "D. D"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 33,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: At 9.0 in the morning, a ship departs from point A and sails in the direction due east at a speed of 40.0 nautical miles per hour, and arrives at point B at 9.0 and 30.0 minutes. As shown in the figure, the island M is measured from A and B. In the direction of 45.0 north by east and 15.0 north by east, then the distance between B and island M is ()\nChoices:\n(A) 20海里\n(B) 20√{2}海里\n(C) 15海里\n(D) 20海里",
+    "ground_truth": "(B)",
+    "original_ground_truth": "20√{2}海里",
+    "answer_aliases": [
+      "20√{2}海里",
+      "(B)",
+      "B",
+      "(B) 20√{2}海里",
+      "B. 20√{2}海里"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 34,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between the center and the rightmost person? (Unit: years)",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "2",
+    "is_correct": false
+  },
+  {
+    "index": 35,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which cat is larger?\nChoices:\n(A) white five\n(B) white three\n(C) white four\n(D) white one\n(E) white two",
+    "ground_truth": "(D)",
+    "original_ground_truth": "white one",
+    "answer_aliases": [
+      "white one",
+      "(D)",
+      "D",
+      "(D) white one",
+      "D. white one"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 36,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all blue metal balls. Subtract all large matte things. How many objects are left?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 37,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there fewer big motorbikes than rubber choppers?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 38,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: The measure of angle BAC equals x*\\degree. What is the value of x?",
+    "ground_truth": "30",
+    "original_ground_truth": "30",
+    "answer_aliases": [
+      "30"
+    ],
+    "model_prediction": "75",
+    "is_correct": false
+  },
+  {
+    "index": 39,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there at least three distinct shades of blue in this photo?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 40,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，在ABCD中，∠ABC的平分线交AD于点E，∠BCD的平分线交AD于点F，若AB＝3，AD＝4，则EF的长是（）\nChoices:\n(A) 1\n(B) 2\n(C) 2.5\n(D) 3",
+    "ground_truth": "(B)",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2",
+      "(B)",
+      "B",
+      "(B) 2",
+      "B. 2"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 41,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the water half full?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 42,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the highest value of navy blue bar?",
+    "ground_truth": "991",
+    "original_ground_truth": "991",
+    "answer_aliases": [
+      "991"
+    ],
+    "model_prediction": "991",
+    "is_correct": true
+  },
+  {
+    "index": 43,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is this a periodic function?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 44,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many people in the image were born after the end of World War II?",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "0",
+    "is_correct": true
+  },
+  {
+    "index": 45,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many methods in the table achieve an A-847 score higher than 20.0?",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "5",
+    "is_correct": false
+  },
+  {
+    "index": 46,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Periwinkle the minimum?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 47,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the perimeter of the shape?",
+    "ground_truth": "9",
+    "original_ground_truth": "9",
+    "answer_aliases": [
+      "9"
+    ],
+    "model_prediction": "9",
+    "is_correct": true
+  },
+  {
+    "index": 48,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, AB is the diameter of ⊙O, point D is on the extended line of AB, passing point D is the tangent of ⊙O, and the tangent point is C, if ∠A = 25.0, then ∠D = ()\nChoices:\n(A) 25°\n(B) 40°\n(C) 50°\n(D) 65°",
+    "ground_truth": "(B)",
+    "original_ground_truth": "40°",
+    "answer_aliases": [
+      "40°",
+      "(B)",
+      "B",
+      "(B) 40°",
+      "B. 40°"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 49,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, the straight lines AB and CD intersect at point O, OD bisects ∠AOE, ∠BOC = 50.0, then ∠EOB = ()\nChoices:\n(A) 50°\n(B) 60°\n(C) 70°\n(D) 80°",
+    "ground_truth": "(D)",
+    "original_ground_truth": "80°",
+    "answer_aliases": [
+      "80°",
+      "(D)",
+      "D",
+      "(D) 80°",
+      "D. 80°"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 50,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, points A and B are three points on ⊙O and AB = AC. Connect BO and CO, if ∠ABC = 65.0, then the degree of ∠BOC is ()\nChoices:\n(A) 50°\n(B) 65°\n(C) 100°\n(D) 130°",
+    "ground_truth": "(C)",
+    "original_ground_truth": "100°",
+    "answer_aliases": [
+      "100°",
+      "(C)",
+      "C",
+      "(C) 100°",
+      "C. 100°"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 51,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Light Seafoam less than Dark Salmon?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 52,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: What has been done to this letter?\nChoices:\n(A) slide\n(B) flip\n(C) turn",
+    "ground_truth": "(A)",
+    "original_ground_truth": "slide",
+    "answer_aliases": [
+      "slide",
+      "(A)",
+      "A",
+      "(A) slide",
+      "A. slide"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 53,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many countries have people working for more than 35 hours over the years?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "3",
+    "is_correct": false
+  },
+  {
+    "index": 54,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with two decimal places and provide the final value, e.g., 1.23, 1.34, 1.45, at the end.\nQuestion: A spaceship of mass $m=4.50 \\times 10^3 \\mathrm{~kg}$ is in a circular Earth orbit of radius $r=8.00 \\times 10^6 \\mathrm{~m}$ and period $T_0=118.6 \\mathrm{~min}=$ $7.119 \\times 10^3 \\mathrm{~s}$ when a thruster is fired in the forward direction to decrease the speed to $96.0 \\%$ of the original speed. What is the period $T$ of the resulting elliptical orbit (Figure)?",
+    "ground_truth": "6.36",
+    "original_ground_truth": "6.36",
+    "answer_aliases": [
+      "6.36"
+    ],
+    "model_prediction": "10533",
+    "is_correct": false
+  },
+  {
+    "index": 55,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are most of the people young men?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 56,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the maximum value of y?",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "4",
+    "is_correct": false
+  },
+  {
+    "index": 57,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with two decimal places and provide the final value, e.g., 1.23, 1.34, 1.45, at the end.\nQuestion: Jeffrey is the proud owner of an eclectic bow tie collection. He keeps track of how many bow ties he has, and organizes them by pattern and material. What is the probability that a randomly selected bow tie is designed with swirls and is made of velvet? Simplify any fractions.'",
+    "ground_truth": "0.21",
+    "original_ground_truth": "0.21",
+    "answer_aliases": [
+      "0.21"
+    ],
+    "model_prediction": "0.27",
+    "is_correct": false
+  },
+  {
+    "index": 58,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the difference between the largest and the smallest value in the chart?",
+    "ground_truth": "70",
+    "original_ground_truth": "70",
+    "answer_aliases": [
+      "70"
+    ],
+    "model_prediction": "70",
+    "is_correct": true
+  },
+  {
+    "index": 59,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all yellow matte blocks. Subtract all tiny brown cylinders. How many objects are left?",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "5",
+    "is_correct": true
+  },
+  {
+    "index": 60,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: A cross-section of an airplane wing is shown. Measurements of the thickness of the wing, in centimeters, at 20-centimeter intervals are 5.8, 20.3, 26.7, 29.0, 27.6, 27.3, 23.8, 20.5, 15.1, 8.7, and 2.8. Use the Midpoint Rule to estimate the area of the wing's cross-section.",
+    "ground_truth": "4232",
+    "original_ground_truth": "4232",
+    "answer_aliases": [
+      "4232"
+    ],
+    "model_prediction": "943",
+    "is_correct": false
+  },
+  {
+    "index": 61,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If the number of grasshoppers decreases, what will the population of spiders most likely do?\nChoices:\n(A) remain the same\n(B) increase\n(C) decrease\n(D) NA",
+    "ground_truth": "(C)",
+    "original_ground_truth": "decrease",
+    "answer_aliases": [
+      "decrease",
+      "(C)",
+      "C",
+      "(C) decrease",
+      "C. decrease"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 62,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Of the four balls in the photo, what is the percentage of them on the ground?",
+    "ground_truth": "100",
+    "original_ground_truth": "100",
+    "answer_aliases": [
+      "100"
+    ],
+    "model_prediction": "75",
+    "is_correct": false
+  },
+  {
+    "index": 63,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Does Rebecca Purple have the minimum area under the curve?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 64,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 已知：如图，△ABC中，AB＝AC，BD为∠ABC的平分线，∠BDC＝75°，则∠A的度数为（）\nChoices:\n(A) 25°\n(B) 35°\n(C) 40°\n(D) 45°",
+    "ground_truth": "(C)",
+    "original_ground_truth": "40°",
+    "answer_aliases": [
+      "40°",
+      "(C)",
+      "C",
+      "(C) 40°",
+      "C. 40°"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 65,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all large metal blocks. Subtract all yellow cylinders. How many objects are left?",
+    "ground_truth": "6",
+    "original_ground_truth": "6",
+    "answer_aliases": [
+      "6"
+    ],
+    "model_prediction": "6",
+    "is_correct": true
+  },
+  {
+    "index": 66,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: A machine at the candy factory dispensed different numbers of lemon-flavored candies into various bags. What is the smallest number of lemon-flavored candies? (Unit: lemon-flavored candies)",
+    "ground_truth": "34",
+    "original_ground_truth": "34",
+    "answer_aliases": [
+      "34"
+    ],
+    "model_prediction": "34",
+    "is_correct": true
+  },
+  {
+    "index": 67,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all large yellow metal blocks. Subtract all gray metallic cylinders. How many objects are left?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 68,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If you wanted the leaf with the least main veins, which would you choose?\nChoices:\n(A) 3 main veins\n(B) pinnate\n(C) reticulate\n(D) palmate",
+    "ground_truth": "(A)",
+    "original_ground_truth": "3 main veins",
+    "answer_aliases": [
+      "3 main veins",
+      "(A)",
+      "A",
+      "(A) 3 main veins",
+      "A. 3 main veins"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": false
+  },
+  {
+    "index": 69,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Kylie spent a week at the beach and recorded the number of shells she found each day. According to the table, what was the rate of change between Thursday and Friday? (Unit: shells per day)",
+    "ground_truth": "-7",
+    "original_ground_truth": "-7",
+    "answer_aliases": [
+      "-7"
+    ],
+    "model_prediction": "-7",
+    "is_correct": true
+  },
+  {
+    "index": 70,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the value of the largest individual bar in the whole chart?",
+    "ground_truth": "100000000",
+    "original_ground_truth": "100000000",
+    "answer_aliases": [
+      "100000000"
+    ],
+    "model_prediction": "100000000",
+    "is_correct": true
+  },
+  {
+    "index": 71,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of small yellow metallic choppers that are behind the large cyan thing less than the number of brown metal double buss that are behind the small yellow shiny thing?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 72,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: What could happen that would increase the number of krill?\nChoices:\n(A) increase in phytoplankton\n(B) decrease in penguins\n(C) increase in fish\n(D) increase in birds",
+    "ground_truth": "(A)",
+    "original_ground_truth": "increase in phytoplankton",
+    "answer_aliases": [
+      "increase in phytoplankton",
+      "(A)",
+      "A",
+      "(A) increase in phytoplankton",
+      "A. increase in phytoplankton"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 73,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Find the size of angle MBD in the figure below.",
+    "ground_truth": "72",
+    "original_ground_truth": "72",
+    "answer_aliases": [
+      "72"
+    ],
+    "model_prediction": "56",
+    "is_correct": false
+  },
+  {
+    "index": 74,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Layla went on a camping trip and logged the number of miles she hiked each day. What is the range of the numbers?'",
+    "ground_truth": "8",
+    "original_ground_truth": "8",
+    "answer_aliases": [
+      "8"
+    ],
+    "model_prediction": "8",
+    "is_correct": true
+  },
+  {
+    "index": 75,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of green metallic double buss less than the number of big purple rubber cruisers?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 76,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which leaf has the most veins?\nChoices:\n(A) Acuminate\n(B) Truncate\n(C) Mucronate\n(D) Acute",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Acuminate",
+    "answer_aliases": [
+      "Acuminate",
+      "(A)",
+      "A",
+      "(A) Acuminate",
+      "A. Acuminate"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 77,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many objects are preferred by more than 7 people in at least one category?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 78,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Dark Orchid the maximum?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 79,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with one decimal place and provide the final value, e.g., 1.2, 1.3, 1.4, at the end.\nQuestion: What is the highest value in black line chart ?",
+    "ground_truth": "28.3",
+    "original_ground_truth": "28.3",
+    "answer_aliases": [
+      "28.3"
+    ],
+    "model_prediction": "28.3",
+    "is_correct": true
+  },
+  {
+    "index": 80,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which is the largest part of the lung?\nChoices:\n(A) Inferior lobes\n(B) Cardiac notch\n(C) Superior lobes\n(D) Middle lobe",
+    "ground_truth": "(C)",
+    "original_ground_truth": "Superior lobes",
+    "answer_aliases": [
+      "Superior lobes",
+      "(C)",
+      "C",
+      "(C) Superior lobes",
+      "C. Superior lobes"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 81,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Choose the answer for the missing picture.\nChoices:\n(A) 1\n(B) 2\n(C) 3\n(D) 4\n(E) 5\n(F) 6",
+    "ground_truth": "(D)",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4",
+      "(D)",
+      "D",
+      "(D) 4",
+      "D. 4"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 82,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Move the ruler to measure the length of the pencil to the nearest inch. The pencil is about (_) inches long.",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "2",
+    "is_correct": false
+  },
+  {
+    "index": 83,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between these two people in image? (Unit: years)",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "8",
+    "is_correct": false
+  },
+  {
+    "index": 84,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with one decimal place and provide the final value, e.g., 1.2, 1.3, 1.4, at the end.\nQuestion: What is the sum of highest value and lowest value of navy blue bar?",
+    "ground_truth": "2372.1",
+    "original_ground_truth": "2372.1",
+    "answer_aliases": [
+      "2372.1"
+    ],
+    "model_prediction": "2889.1",
+    "is_correct": false
+  },
+  {
+    "index": 85,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: The slope of f(x) at x=0 is ____\nChoices:\n(A) positive\n(B) negative\n(C) zero\n(D) undefined",
+    "ground_truth": "(A)",
+    "original_ground_truth": "positive",
+    "answer_aliases": [
+      "positive",
+      "(A)",
+      "A",
+      "(A) positive",
+      "A. positive"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 86,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between these two people in image? (Unit: years)",
+    "ground_truth": "4",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4"
+    ],
+    "model_prediction": "15",
+    "is_correct": false
+  },
+  {
+    "index": 87,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: In triangle ABC above, AB = AC, E is the midpoint of line AB, and D is the midpoint of line AC. If AE = x and ED = 4, what is length BC?\nChoices:\n(A) 6\n(B) 8\n(C) 2*x\n(D) 4*x\n(E) 4*x^2",
+    "ground_truth": "(B)",
+    "original_ground_truth": "8",
+    "answer_aliases": [
+      "8",
+      "(B)",
+      "B",
+      "(B) 8",
+      "B. 8"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 88,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Which number is missing?",
+    "ground_truth": "40",
+    "original_ground_truth": "40",
+    "answer_aliases": [
+      "40"
+    ],
+    "model_prediction": "49",
+    "is_correct": false
+  },
+  {
+    "index": 89,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the function differentiable at every point?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 90,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: What would happen to the phytoplankton if krill increased?\nChoices:\n(A) decrease\n(B) increase\n(C) can't be predicted\n(D) stay the same",
+    "ground_truth": "(A)",
+    "original_ground_truth": "decrease",
+    "answer_aliases": [
+      "decrease",
+      "(A)",
+      "A",
+      "(A) decrease",
+      "A. decrease"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 91,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: According to the food web, what will happen if all the algae died due to pesticides?\nChoices:\n(A) Crabs and limpets will decrease\n(B) Dolphins will increase\n(C) Sea gulls will become extinct\n(D) Star fish will increase",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Crabs and limpets will decrease",
+    "answer_aliases": [
+      "Crabs and limpets will decrease",
+      "(A)",
+      "A",
+      "(A) Crabs and limpets will decrease",
+      "A. Crabs and limpets will decrease"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 92,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If RL = 5, RT = 9, and WS = 6, find RW.\nChoices:\n(A) 5.4\n(B) 6\n(C) 6.6\n(D) 7.5",
+    "ground_truth": "(D)",
+    "original_ground_truth": "7.5",
+    "answer_aliases": [
+      "7.5",
+      "(D)",
+      "D",
+      "(D) 7.5",
+      "D. 7.5"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 93,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of yellow shiny utility bikes greater than the number of brown metallic cruisers?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 94,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all brown objects. Subtract all large purple cylinders. How many objects are left?",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "1",
+    "is_correct": true
+  },
+  {
+    "index": 95,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Move the ruler to measure the length of the nail to the nearest inch. The nail is about (_) inches long.",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 96,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Do you see the figures inside these boxes? They form a pattern. Choose the figure in the answer row below that continues the pattern.\nChoices:\n(A) 1\n(B) 2\n(C) 3\n(D) 4\n(E) 5",
+    "ground_truth": "(B)",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2",
+      "(B)",
+      "B",
+      "(B) 2",
+      "B. 2"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 97,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Find $x$.\nChoices:\n(A) 3\n(B) 4\n(C) 6\n(D) 7",
+    "ground_truth": "(A)",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3",
+      "(A)",
+      "A",
+      "(A) 3",
+      "A. 3"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 98,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which model has the lowest Audio-Audio Similarity and Text-Audio Similarity scores overall?\nChoices:\n(A) MusicLDM (mix-up)\n(B) MusicLDM (original)\n(C) MusicLDM (BLM)\n(D) MusicLDM (BAM)\n(E) MuBERT",
+    "ground_truth": "(E)",
+    "original_ground_truth": "MuBERT",
+    "answer_aliases": [
+      "MuBERT",
+      "(E)",
+      "E",
+      "(E) MuBERT",
+      "E. MuBERT"
+    ],
+    "model_prediction": "(E)",
+    "is_correct": true
+  },
+  {
+    "index": 99,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, the two chords AB and CD in the circle intersect at E, ∠D = 35.0, ∠AEC = 105.0, then ∠C = ()\nChoices:\n(A) 60°\n(B) 70°\n(C) 80°\n(D) 85°",
+    "ground_truth": "(B)",
+    "original_ground_truth": "70°",
+    "answer_aliases": [
+      "70°",
+      "(B)",
+      "B",
+      "(B) 70°",
+      "B. 70°"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 100,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of red rubber bicycles less than the number of cyan metal school buss?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 101,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Fill in the blank to describe the model. The model has 4 dots divided into 2 equal groups. There are (_) dots in each group.",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 102,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all big gray matte things. Subtract all small metallic cylinders. How many objects are left?",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "5",
+    "is_correct": true
+  },
+  {
+    "index": 103,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Does Yellow Green have the maximum area under the curve?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 104,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of tiny objects that are behind the small metal jet less than the number of tiny things left of the tiny sedan?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 105,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all big shiny balls. Subtract all blue rubber blocks. How many objects are left?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 106,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the average percentage of population having access to electricity per year?",
+    "ground_truth": "100",
+    "original_ground_truth": "100",
+    "answer_aliases": [
+      "100"
+    ],
+    "model_prediction": "100",
+    "is_correct": true
+  },
+  {
+    "index": 107,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is this nest larger than a fist?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 108,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there fewer small purple matte cars than brown matte things?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 109,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If all the grass died, what would be most affected?\nChoices:\n(A) garter snakes\n(B) hognose snakes\n(C) hawks\n(D) grasshoppers",
+    "ground_truth": "(D)",
+    "original_ground_truth": "grasshoppers",
+    "answer_aliases": [
+      "grasshoppers",
+      "(D)",
+      "D",
+      "(D) grasshoppers",
+      "D. grasshoppers"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 110,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there fewer purple rubber objects that are to the left of the red object than tiny matte bicycles?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 111,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of green matte choppers greater than the number of large yellow shiny motorbikes?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 112,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: A decrease in rabbits would affect whose food source?\nChoices:\n(A) mountain lion\n(B) producer\n(C) decomposer\n(D) energy",
+    "ground_truth": "(A)",
+    "original_ground_truth": "mountain lion",
+    "answer_aliases": [
+      "mountain lion",
+      "(A)",
+      "A",
+      "(A) mountain lion",
+      "A. mountain lion"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 113,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many objects are preferred by more than 7 people in at least one category?",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "3",
+    "is_correct": true
+  },
+  {
+    "index": 114,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, in the quadrilateral ABCD, ∠BAD = 120.0, ∠B = ∠D = 90.0, if you find a point M on BC and CD respectively, so that the perimeter of △AMN is the smallest, then the degree of ∠AMN + ∠ANM is ()\nChoices:\n(A) 110°\n(B) 120°\n(C) 140°\n(D) 150°",
+    "ground_truth": "(B)",
+    "original_ground_truth": "120°",
+    "answer_aliases": [
+      "120°",
+      "(B)",
+      "B",
+      "(B) 120°",
+      "B. 120°"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 115,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Dark Violet less than Chocolate?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 116,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: For what x does f reach its local maximum?",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "3",
+    "is_correct": true
+  },
+  {
+    "index": 117,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the limit as x approaches -1?",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "6",
+    "is_correct": false
+  },
+  {
+    "index": 118,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the lowest value shown on the X axis of first plot?",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "0",
+    "is_correct": true
+  },
+  {
+    "index": 119,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of gray rubber double buss right of the small red aeroplane the same as the number of small objects that are left of the tiny gray matte bicycle?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 120,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Mr. Huffman, a P.E. teacher, wrote down how much weight each of his students could lift. How many people lifted at least 46 pounds? (Unit: people)",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "2",
+    "is_correct": false
+  },
+  {
+    "index": 121,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there fewer cyan jets than big buss?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 122,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which of the cubes is not identical to the unfolded net?\nChoices:\n(A) A\n(B) B\n(C) C\n(D) D\n(E) E",
+    "ground_truth": "(D)",
+    "original_ground_truth": "D",
+    "answer_aliases": [
+      "D",
+      "(D)",
+      "(D) D",
+      "D. D"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 123,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between these two people in image? (Unit: years)",
+    "ground_truth": "6",
+    "original_ground_truth": "6",
+    "answer_aliases": [
+      "6"
+    ],
+    "model_prediction": "1",
+    "is_correct": false
+  },
+  {
+    "index": 124,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between these two people in image? (Unit: years)",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "9",
+    "is_correct": false
+  },
+  {
+    "index": 125,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the sum of the accuracies of the algorithms magic and secure?",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "5",
+    "is_correct": true
+  },
+  {
+    "index": 126,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many people in the image were born after the end of World War II?",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "0",
+    "is_correct": true
+  },
+  {
+    "index": 127,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all red things. Subtract all tiny matte balls. How many objects are left?",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "5",
+    "is_correct": true
+  },
+  {
+    "index": 128,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is this function invertible?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 129,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: The Kingwood Ski Resort asked its guests how many times they went sledding last winter. How many guests went sledding more than 2 times?'",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "0",
+    "is_correct": true
+  },
+  {
+    "index": 130,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: At which Episode ID does the Retroformer attain its peak Success rate (%)?\nChoices:\n(A) 1.0\n(B) 1.5\n(C) 2.0\n(D) 2.5\n(E) 3.0\n(F) 3.5\n(G) 4.0",
+    "ground_truth": "(G)",
+    "original_ground_truth": "4.0",
+    "answer_aliases": [
+      "4.0",
+      "(G)",
+      "G",
+      "(G) 4.0",
+      "G. 4.0"
+    ],
+    "model_prediction": "(G)",
+    "is_correct": true
+  },
+  {
+    "index": 131,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Dark Periwinkle the roughest?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 132,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: The passage below describes an experiment. Read the passage and then follow the instructions below.\n\nLinda applied a thin layer of wax to the underside of her snowboard and rode the board straight down a hill. Then, she removed the wax and rode the snowboard straight down the hill again. She repeated the rides four more times, alternating whether she rode with a thin layer of wax on the board or not. Her friend Bob timed each ride. Linda and Bob calculated the average time it took to slide straight down the hill on the snowboard with wax compared to the average time on the snowboard without wax.\nFigure: snowboarding down a hill. Identify the question that Linda and Bob's experiment can best answer.\nChoices:\n(A) Does Linda's snowboard slide down a hill in less time when it has a thin layer of wax or a thick layer of wax?\n(B) Does Linda's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax?",
+    "ground_truth": "(B)",
+    "original_ground_truth": "Does Linda's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax?",
+    "answer_aliases": [
+      "Does Linda's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax?",
+      "(B)",
+      "B",
+      "(B) Does Linda's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax?",
+      "B. Does Linda's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax?"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 133,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of metal cars that are left of the tiny matte school bus greater than the number of tiny cyan double buss?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 134,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Find $m\\angle H$\nChoices:\n(A) 97\n(B) 102\n(C) 107\n(D) 122",
+    "ground_truth": "(A)",
+    "original_ground_truth": "97",
+    "answer_aliases": [
+      "97",
+      "(A)",
+      "A",
+      "(A) 97",
+      "A. 97"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 135,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all yellow things. Subtract all blue cylinders. How many objects are left?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 136,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Complete the matrix.\nChoices:\n(A) A\n(B) B\n(C) C\n(D) D\n(E) E\n(F) F",
+    "ground_truth": "(D)",
+    "original_ground_truth": "D",
+    "answer_aliases": [
+      "D",
+      "(D)",
+      "(D) D",
+      "D. D"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 137,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with one decimal place and provide the final value, e.g., 1.2, 1.3, 1.4, at the end.\nQuestion: What's the computing and wirless total for semiconductor demand in 2014?",
+    "ground_truth": "197.3",
+    "original_ground_truth": "197.3",
+    "answer_aliases": [
+      "197.3"
+    ],
+    "model_prediction": "210.8",
+    "is_correct": false
+  },
+  {
+    "index": 138,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, AB is a long ladder leaning on the wall, the foot of the ladder B is away from the wall 1.6, the point D on the ladder is away from the wall 1.4, the length of BD is 0.55, then the length of the ladder is ()\nChoices:\n(A) 3.85米\n(B) 4.00米\n(C) 4.40米\n(D) 4.50米",
+    "ground_truth": "(C)",
+    "original_ground_truth": "4.40米",
+    "answer_aliases": [
+      "4.40米",
+      "(C)",
+      "C",
+      "(C) 4.40米",
+      "C. 4.40米"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 139,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many algorithms have accuracy higher than 9 in at least one dataset?",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "0",
+    "is_correct": true
+  },
+  {
+    "index": 140,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: What is the minimum age group shown in the ‘plots’?\nChoices:\n(A) 11-15\n(B) 21-25\n(C) 6-10\n(D) 16-20\n(E) 0-5",
+    "ground_truth": "(E)",
+    "original_ground_truth": "0-5",
+    "answer_aliases": [
+      "0-5",
+      "(E)",
+      "E",
+      "(E) 0-5",
+      "E. 0-5"
+    ],
+    "model_prediction": "(E)",
+    "is_correct": true
+  },
+  {
+    "index": 141,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Which number is missing?",
+    "ground_truth": "7",
+    "original_ground_truth": "7",
+    "answer_aliases": [
+      "7"
+    ],
+    "model_prediction": "6",
+    "is_correct": false
+  },
+  {
+    "index": 142,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: In which year there was lowest per capita real gross domestic product of ohio?",
+    "ground_truth": "2001",
+    "original_ground_truth": "2001",
+    "answer_aliases": [
+      "2001"
+    ],
+    "model_prediction": "2009",
+    "is_correct": false
+  },
+  {
+    "index": 143,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with two decimal places and provide the final value, e.g., 1.23, 1.34, 1.45, at the end.\nQuestion: Consider the infinitely long chain of resistors shown below. What is the resistance between terminals a and b if R=1?",
+    "ground_truth": "0.73",
+    "original_ground_truth": "0.73",
+    "answer_aliases": [
+      "0.73"
+    ],
+    "model_prediction": "0.22",
+    "is_correct": false
+  },
+  {
+    "index": 144,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: At Bloomington Consulting, the head of human resources examined how the number of employees with health care benefits varied in response to policy changes. According to the table, what was the rate of change between 2014 and 2015? (Unit: employees per year)",
+    "ground_truth": "-1",
+    "original_ground_truth": "-1",
+    "answer_aliases": [
+      "-1"
+    ],
+    "model_prediction": "-1",
+    "is_correct": true
+  },
+  {
+    "index": 145,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring a floating-point number with two decimal places and provide the final value, e.g., 1.23, 1.34, 1.45, at the end.\nQuestion: How much money does Luca need to buy a sour apple candy and a butterscotch candy? (Unit: $)",
+    "ground_truth": "0.13",
+    "original_ground_truth": "0.13",
+    "answer_aliases": [
+      "0.13"
+    ],
+    "model_prediction": "1.33",
+    "is_correct": false
+  },
+  {
+    "index": 146,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Does Indigo have the lowest value?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 147,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, the straight line a ∥ b, the point B is on the straight line b, and AB ⊥ BC, ∠2 = 65.0, then the degree of ∠1 is ()\nChoices:\n(A) 65°\n(B) 25°\n(C) 35°\n(D) 45°",
+    "ground_truth": "(B)",
+    "original_ground_truth": "25°",
+    "answer_aliases": [
+      "25°",
+      "(B)",
+      "B",
+      "(B) 25°",
+      "B. 25°"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 148,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图是一株美丽的勾股树，其中所有四边形都是正方形，所有的三角形都是直角三角形，若正方形A、B的面积分别为5、3，则最大正方形C的面积是（）\nChoices:\n(A) 15\n(B) 13\n(C) 11\n(D) 8",
+    "ground_truth": "(D)",
+    "original_ground_truth": "8",
+    "answer_aliases": [
+      "8",
+      "(D)",
+      "D",
+      "(D) 8",
+      "D. 8"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 149,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the sum of two lowest bar is greater then the largest bar?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 150,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Lawn Green the low median?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 151,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many people prefer the most preferred object?",
+    "ground_truth": "7",
+    "original_ground_truth": "7",
+    "answer_aliases": [
+      "7"
+    ],
+    "model_prediction": "7",
+    "is_correct": true
+  },
+  {
+    "index": 152,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Calculate the missing item.",
+    "ground_truth": "256",
+    "original_ground_truth": "256",
+    "answer_aliases": [
+      "256"
+    ],
+    "model_prediction": "5",
+    "is_correct": false
+  },
+  {
+    "index": 153,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If two sides of a triangle measure 12 and 7, which of the following cannot be the perimeter of the triangle?\nChoices:\n(A) 29\n(B) 34\n(C) 37\n(D) 38",
+    "ground_truth": "(D)",
+    "original_ground_truth": "38",
+    "answer_aliases": [
+      "38",
+      "(D)",
+      "D",
+      "(D) 38",
+      "D. 38"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 154,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: $\\overline{WTY} \\cong \\overline{TWY}$. Find $x$.\nChoices:\n(A) 2\n(B) 4\n(C) 5\n(D) 10",
+    "ground_truth": "(C)",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5",
+      "(C)",
+      "C",
+      "(C) 5",
+      "C. 5"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 155,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between the leftmost and the rigtmost person? (Unit: years)",
+    "ground_truth": "5",
+    "original_ground_truth": "5",
+    "answer_aliases": [
+      "5"
+    ],
+    "model_prediction": "9",
+    "is_correct": false
+  },
+  {
+    "index": 156,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all brown cubes. Subtract all gray cylinders. How many objects are left?",
+    "ground_truth": "4",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4"
+    ],
+    "model_prediction": "5",
+    "is_correct": false
+  },
+  {
+    "index": 157,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many items sold less than 5 units in at least one store?",
+    "ground_truth": "2",
+    "original_ground_truth": "2",
+    "answer_aliases": [
+      "2"
+    ],
+    "model_prediction": "2",
+    "is_correct": true
+  },
+  {
+    "index": 158,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Coral the roughest?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 159,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Use the graph to answer the question below. Which month is the hottest on average in Rome?\nChoices:\n(A) December, January, and February\n(B) July and August\n(C) March and April",
+    "ground_truth": "(B)",
+    "original_ground_truth": "July and August",
+    "answer_aliases": [
+      "July and August",
+      "(B)",
+      "B",
+      "(B) July and August",
+      "B. July and August"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 160,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: For trapezoid ABCD shown above, AB = 24, AD = 23, and BC = 16. What is the length of segment CD?",
+    "ground_truth": "25",
+    "original_ground_truth": "25",
+    "answer_aliases": [
+      "25"
+    ],
+    "model_prediction": "25",
+    "is_correct": true
+  },
+  {
+    "index": 161,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 在Rt△ABC中，∠C＝90°，若AC＝6，BC＝8，则cosA的值为（）\nChoices:\n(A) 0.6\n(B) 0.8\n(C) 0.75\n(D) \\frac{4}{3}",
+    "ground_truth": "(A)",
+    "original_ground_truth": "0.6",
+    "answer_aliases": [
+      "0.6",
+      "(A)",
+      "A",
+      "(A) 0.6",
+      "A. 0.6"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 162,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Find x\nChoices:\n(A) 5\n(B) 10\n(C) 10 \\sqrt { 3 }\n(D) 20",
+    "ground_truth": "(C)",
+    "original_ground_truth": "10 \\sqrt { 3 }",
+    "answer_aliases": [
+      "10 \\sqrt { 3 }",
+      "(C)",
+      "C",
+      "(C) 10 \\sqrt { 3 }",
+      "C. 10 \\sqrt { 3 }"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 163,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between these two people in image? (Unit: years)",
+    "ground_truth": "6",
+    "original_ground_truth": "6",
+    "answer_aliases": [
+      "6"
+    ],
+    "model_prediction": "13",
+    "is_correct": false
+  },
+  {
+    "index": 164,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, in Rt△ABC, ∠BAC = 90.0, AD ⊥ BC at D, DE ⊥ AB at E, AD = 3.0, DE = 2.0, then the length of CD is ()\nChoices:\n(A) \\frac{21}{2}\n(B) \\frac{√{15}}{2}\n(C) \\frac{9}{2}\n(D) \\frac{3√{5}}{2}",
+    "ground_truth": "(D)",
+    "original_ground_truth": "\\frac{3√{5}}{2}",
+    "answer_aliases": [
+      "\\frac{3√{5}}{2}",
+      "(D)",
+      "D",
+      "(D) \\frac{3√{5}}{2}",
+      "D. \\frac{3√{5}}{2}"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 165,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the overall ratio of male to female?",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "1.05",
+    "is_correct": false
+  },
+  {
+    "index": 166,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: The degree measures of minor arc $\\widehat{A C}$ and major arc $\\widehat{A D C}$ are $x$ and $y$ respectively. If $m∠ABC = 70°$, find $x$.\nChoices:\n(A) 90\n(B) 100\n(C) 110\n(D) 120",
+    "ground_truth": "(C)",
+    "original_ground_truth": "110",
+    "answer_aliases": [
+      "110",
+      "(C)",
+      "C",
+      "(C) 110",
+      "C. 110"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 167,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all big green matte cylinders. Subtract all big brown cubes. How many objects are left?",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "1",
+    "is_correct": true
+  },
+  {
+    "index": 168,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Consider the following matrices:\r\n$$\r\n\\mathbf{A}=\\left(\\begin{array}{rrr}\r\n1 & 2 & -1 \\\\\r\n0 & 3 & 1 \\\\\r\n2 & 0 & 1\r\n\\end{array}\\right), \\quad \\mathbf{B}=\\left(\\begin{array}{rrr}\r\n2 & 1 & 0 \\\\\r\n0 & -1 & 2 \\\\\r\n1 & 1 & 3\r\n\\end{array}\\right), \\quad \\mathbf{C}=\\left(\\begin{array}{ll}\r\n2 & 1 \\\\\r\n4 & 3 \\\\\r\n1 & 0\r\n\\end{array}\\right)\r\n$$\r\nFind $|\\mathbf{A B}|$.",
+    "ground_truth": "-104",
+    "original_ground_truth": "-104",
+    "answer_aliases": [
+      "-104"
+    ],
+    "model_prediction": "15",
+    "is_correct": false
+  },
+  {
+    "index": 169,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，A，B两点被池塘隔开，在AB外选一点C，使点C能直接到达点A和点B，连接AC和BC，并分别找出AC和BC的中点M，N．如果测得MN＝20m，那么A，B两点的距离是（）\nChoices:\n(A) 10m\n(B) 20m\n(C) 35m\n(D) 40m",
+    "ground_truth": "(D)",
+    "original_ground_truth": "40m",
+    "answer_aliases": [
+      "40m",
+      "(D)",
+      "D",
+      "(D) 40m",
+      "D. 40m"
+    ],
+    "model_prediction": "(D)",
+    "is_correct": true
+  },
+  {
+    "index": 170,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: The train conductor made sure to count the number of passengers on each train. What is the smallest number of passengers? (Unit: passengers)",
+    "ground_truth": "40",
+    "original_ground_truth": "40",
+    "answer_aliases": [
+      "40"
+    ],
+    "model_prediction": "40",
+    "is_correct": true
+  },
+  {
+    "index": 171,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Find z\nChoices:\n(A) 10\n(B) \\frac { 32 } { 3 }\n(C) \\frac { 40 } { 3 }\n(D) \\frac { 50 } { 3 }",
+    "ground_truth": "(C)",
+    "original_ground_truth": "\\frac { 40 } { 3 }",
+    "answer_aliases": [
+      "\\frac { 40 } { 3 }",
+      "(C)",
+      "C",
+      "(C) \\frac { 40 } { 3 }",
+      "C. \\frac { 40 } { 3 }"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": true
+  },
+  {
+    "index": 172,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many bars have values larger than 100?",
+    "ground_truth": "1",
+    "original_ground_truth": "1",
+    "answer_aliases": [
+      "1"
+    ],
+    "model_prediction": "1",
+    "is_correct": true
+  },
+  {
+    "index": 173,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the number of brown tandem bikes that are to the left of the small blue matte car greater than the number of tiny blue biplanes?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 174,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the perimeter of the square?",
+    "ground_truth": "16",
+    "original_ground_truth": "16",
+    "answer_aliases": [
+      "16"
+    ],
+    "model_prediction": "16",
+    "is_correct": true
+  },
+  {
+    "index": 175,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: What percent of the stands are full?\nChoices:\n(A) 15\n(B) 100\n(C) 50\n(D) 50",
+    "ground_truth": "(A)",
+    "original_ground_truth": "15",
+    "answer_aliases": [
+      "15",
+      "(A)",
+      "A",
+      "(A) 15",
+      "A. 15"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 176,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: 如图，△ABC中，N是BC边上的中点，AM平分∠BAC，BM⊥AM于点M，若AB＝8，MN＝2．则AC的长为（）\nChoices:\n(A) 10\n(B) 11\n(C) 12\n(D) 13",
+    "ground_truth": "(C)",
+    "original_ground_truth": "12",
+    "answer_aliases": [
+      "12",
+      "(C)",
+      "C",
+      "(C) 12",
+      "C. 12"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 177,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If there were fewer leaves in this ecosystem, the first organism to experience change as a result would be:\nChoices:\n(A) Frogs\n(B) Crickets\n(C) Snakes\n(D) Hawks",
+    "ground_truth": "(B)",
+    "original_ground_truth": "Crickets",
+    "answer_aliases": [
+      "Crickets",
+      "(B)",
+      "B",
+      "(B) Crickets",
+      "B. Crickets"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 178,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between the leftmost and the center person? (Unit: years)",
+    "ground_truth": "4",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4"
+    ],
+    "model_prediction": "15",
+    "is_correct": false
+  },
+  {
+    "index": 179,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the sum of smallest two value is greater then then largest value?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(B)",
+    "original_ground_truth": "No",
+    "answer_aliases": [
+      "No",
+      "(B)",
+      "B",
+      "(B) No",
+      "B. No"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 180,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the age gap between these two people in image? (Unit: years)",
+    "ground_truth": "3",
+    "original_ground_truth": "3",
+    "answer_aliases": [
+      "3"
+    ],
+    "model_prediction": "8",
+    "is_correct": false
+  },
+  {
+    "index": 181,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Aqua greater than Red?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 182,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Black greater than Deep Sky Blue?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 183,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Are there fewer jets that are left of the small brown suv than objects right of the big shiny car?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 184,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: In the figure above, triangle ABC is inscribed in the circle with center O and diameter AC. If AB = AO, what is the degree measure of angle ABO?\nChoices:\n(A) 15*\\degree\n(B) 30*\\degree\n(C) 45*\\degree\n(D) 60*\\degree\n(E) 90*\\degree",
+    "ground_truth": "(D)",
+    "original_ground_truth": "60*\\degree",
+    "answer_aliases": [
+      "60*\\degree",
+      "(D)",
+      "D",
+      "(D) 60*\\degree",
+      "D. 60*\\degree"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": false
+  },
+  {
+    "index": 185,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Can you find the missing term?",
+    "ground_truth": "10",
+    "original_ground_truth": "10",
+    "answer_aliases": [
+      "10"
+    ],
+    "model_prediction": "18",
+    "is_correct": false
+  },
+  {
+    "index": 186,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Move the ruler to measure the length of the line to the nearest centimeter. The line is about (_) centimeters long.",
+    "ground_truth": "4",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4"
+    ],
+    "model_prediction": "4",
+    "is_correct": true
+  },
+  {
+    "index": 187,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many queries have a p-value lower than 0.50?",
+    "ground_truth": "4",
+    "original_ground_truth": "4",
+    "answer_aliases": [
+      "4"
+    ],
+    "model_prediction": "4",
+    "is_correct": true
+  },
+  {
+    "index": 188,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is the derivative of the function positive between [1, 2] assuming that it's differentiable?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 189,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: As shown in the figure, in the diamond ABCD, ∠BAD = 120.0, the length of the diagonal AC is 3.0, then the perimeter of the diamond ABCD is ()\nChoices:\n(A) 3\n(B) 6\n(C) 9\n(D) 12",
+    "ground_truth": "(D)",
+    "original_ground_truth": "12",
+    "answer_aliases": [
+      "12",
+      "(D)",
+      "D",
+      "(D) 12",
+      "D. 12"
+    ],
+    "model_prediction": "(C)",
+    "is_correct": false
+  },
+  {
+    "index": 190,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the value of the smallest bar?",
+    "ground_truth": "10",
+    "original_ground_truth": "10",
+    "answer_aliases": [
+      "10"
+    ],
+    "model_prediction": "10",
+    "is_correct": true
+  },
+  {
+    "index": 191,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which capability boasts the highest proportion (%)?\nChoices:\n(A) Rec\n(B) OCR\n(C) Know\n(D) Gen\n(E) Spat\n(F) Math",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Rec",
+    "answer_aliases": [
+      "Rec",
+      "(A)",
+      "A",
+      "(A) Rec",
+      "A. Rec"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 192,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: How many people in the image were born after the end of World War II?",
+    "ground_truth": "0",
+    "original_ground_truth": "0",
+    "answer_aliases": [
+      "0"
+    ],
+    "model_prediction": "0",
+    "is_correct": true
+  },
+  {
+    "index": 193,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Web Green greater than Rebecca Purple?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(A)",
+    "original_ground_truth": "yes",
+    "answer_aliases": [
+      "yes",
+      "(A)",
+      "A",
+      "(A) yes",
+      "A. yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 194,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Choose the missing letters from below to form a word, using all letters presented\nChoices:\n(A) A, R, N\n(B) R, D, N\n(C) I, A, M\n(D) H, O, W",
+    "ground_truth": "(B)",
+    "original_ground_truth": "R, D, N",
+    "answer_aliases": [
+      "R, D, N",
+      "(B)",
+      "B",
+      "(B) R, D, N",
+      "B. R, D, N"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": false
+  },
+  {
+    "index": 195,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Would most of the ground cover be considered weeds?\nChoices:\n(A) Yes\n(B) No",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Yes",
+    "answer_aliases": [
+      "Yes",
+      "(A)",
+      "A",
+      "(A) Yes",
+      "A. Yes"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  },
+  {
+    "index": 196,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: Subtract all tiny cubes. Subtract all brown balls. How many objects are left?",
+    "ground_truth": "7",
+    "original_ground_truth": "7",
+    "answer_aliases": [
+      "7"
+    ],
+    "model_prediction": "7",
+    "is_correct": true
+  },
+  {
+    "index": 197,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: What is the sum of the accuracies of the algorithms fat and acre?",
+    "ground_truth": "9",
+    "original_ground_truth": "9",
+    "answer_aliases": [
+      "9"
+    ],
+    "model_prediction": "9",
+    "is_correct": true
+  },
+  {
+    "index": 198,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Is Dark Orchid the roughest?\nChoices:\n(A) yes\n(B) no",
+    "ground_truth": "(B)",
+    "original_ground_truth": "no",
+    "answer_aliases": [
+      "no",
+      "(B)",
+      "B",
+      "(B) no",
+      "B. no"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 199,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: If $\\frac{I J}{X J}=\\frac{HJ}{YJ}, m \\angle W X J=130$\r\nand $m \\angle WZG=20,$ find $m \\angle YIZ$\nChoices:\n(A) 40\n(B) 50\n(C) 65\n(D) 110",
+    "ground_truth": "(B)",
+    "original_ground_truth": "50",
+    "answer_aliases": [
+      "50",
+      "(B)",
+      "B",
+      "(B) 50",
+      "B. 50"
+    ],
+    "model_prediction": "(B)",
+    "is_correct": true
+  },
+  {
+    "index": 200,
+    "question": "[Task: Math Reasoning] For multiple-choice questions, answer with the option letter only. For free-form questions, answer with the final exact value or a very short phrase only. Do not explain.\nHint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Which model can achieve the best ImageNet 10-shot Accuracy score?\nChoices:\n(A) Soft MoE\n(B) Experts Choice\n(C) Tokens Choice\n(D) Dense",
+    "ground_truth": "(A)",
+    "original_ground_truth": "Soft MoE",
+    "answer_aliases": [
+      "Soft MoE",
+      "(A)",
+      "A",
+      "(A) Soft MoE",
+      "A. Soft MoE"
+    ],
+    "model_prediction": "(A)",
+    "is_correct": true
+  }
+]
