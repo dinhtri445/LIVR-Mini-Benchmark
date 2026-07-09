@@ -1,4 +1,4 @@
-# 🧠 LIVR-Mini-Benchmark
+# LIVR-Mini-Benchmark
 
 **LIVR-Mini-Benchmark** là một dự án nghiên cứu, thực nghiệm và đánh giá phiên bản tinh gọn của kiến trúc **LIVR (Latent Implicit Visual Reasoning)** tích hợp trên mô hình đa phương thức nền tảng **Qwen2.5-VL-3B-Instruct**. 
 
@@ -6,7 +6,7 @@ Dự án được tối ưu hóa toàn diện để chạy ổn định và đ�
 
 ---
 
-## 🎯 1. Ý Tưởng Dự Án & Phương Pháp LIVR
+## 1. Ý Tưởng Dự Án & Phương Pháp LIVR
 Kiến trúc LIVR (Suy luận Thị giác Ngầm ẩn qua Trạng thái Ẩn) dựa trên bài báo khoa học cùng tên, hoạt động theo cơ chế ép mô hình đa phương thức mã hóa các đặc trưng thị giác của ảnh vào một chuỗi gồm $K$ trạng thái ẩn (Latent Tokens) đặc biệt trước khi đưa ra câu trả lời cuối cùng. 
 
 Quá trình huấn luyện được thực hiện qua **2 Giai đoạn (Two-Stage Training)**:
@@ -23,7 +23,7 @@ Quá trình huấn luyện được thực hiện qua **2 Giai đoạn (Two-Stag
 
 ---
 
-## ⚡ 2. Các Tối Ưu Hóa Kỹ Thuật Cho GPU T4 (16GB VRAM)
+## 2. Các Tối Ưu Hóa Kỹ Thuật Cho GPU T4 (16GB VRAM)
 Để có thể chạy huấn luyện mô hình Vision-Language 3 tỷ tham số trên card T4 miễn phí mà không bị lỗi tràn bộ nhớ (Out-Of-Memory - OOM) hay đạo hàm NaN:
 *   **Lượng hóa QLoRA 4-bit (NF4)**: Giảm dung lượng tải trọng số mô hình nền từ ~6GB xuống chỉ còn **1.8GB VRAM**.
 *   **Kiểu dữ liệu tính toán Float16**: Cấu hình `bnb_4bit_compute_dtype = torch.float16` giúp tận dụng tối đa nhân Tensor Cores của GPU T4 (tránh dùng `bfloat16` vì T4 không hỗ trợ phần cứng này natively).
@@ -33,27 +33,38 @@ Quá trình huấn luyện được thực hiện qua **2 Giai đoạn (Two-Stag
 
 ---
 
-## 📂 3. Cấu Trúc Thư Mục Dự Án
+## 3. Cấu Trúc Thư Mục Dự Án
+
+Sơ đồ cấu trúc thư mục toàn diện của dự án **LIVR-Mini-Benchmark**:
+
 ```text
 LIVR-Mini-Benchmark/
 ├── config/
-│   ├── implement_config.json   # Cấu hình huấn luyện Stage 1 & Stage 2
-│   └── evaluation_config.json  # Cấu hình đánh giá miền Novel Datasets
-├── docs/
-│   └── nghiem_thu.md           # Báo cáo nghiệm thu kỹ thuật chi tiết & ví dụ thực tế
+│   ├── implement_config.json       # Cấu hình siêu tham số huấn luyện Stage 1 & Stage 2
+│   └── evaluation_config.json      # Cấu hình đánh giá trên các miền Novel Datasets
 ├── src/
-│   ├── model.py                # Quản lý nạp mô hình QLoRA, Vocab Expansion & Hook
-│   ├── mask.py                 # Xây dựng custom attention mask & Monkey-patching
-│   └── utils.py                # Pipeline tiền xử lý dữ liệu, pHash de-duplication
-├── 01_implement_mini.ipynb     # Notebook huấn luyện & Đánh giá baseline (disable LoRA)
-├── 02_evaluation_mini.ipynb    # Notebook adaptation 2 epochs & Sanity Check chặn ảnh
-├── requirements.txt            # Danh sách thư viện bắt buộc
-└── README.md                   # Tài liệu hướng dẫn sử dụng dự án
+│   ├── __init__.py                 # Khởi tạo package python src
+│   ├── model.py                    # Khởi tạo mô hình Qwen2.5-VL QLoRA, Vocab Expansion & Hook
+│   ├── mask.py                     # Custom Attention Mask & Monkey-patching cho môi trường chung
+│   ├── mask_kaggle.py              # Monkey-patching Attention Mask tối ưu trên Kaggle
+│   └── utils.py                    # Pipeline tải dữ liệu, tiền xử lý và loại trùng lặp (pHash)
+├── logs/
+│   ├── three_way_summary.json      # Bảng tổng hợp so sánh hiệu năng (Zero-shot, SFT, LIVR)
+│   ├── eval_details_cv_bench_*.json # Chi tiết kết quả đánh giá trên tập CV-Bench
+│   └── eval_details_mathvista_*.json # Chi tiết kết quả đánh giá trên tập MathVista
+├── 01_implement_mini.ipynb         # Notebook huấn luyện & đánh giá baseline trên Google Colab
+├── 01_implement_mini_kaggle.ipynb  # Notebook huấn luyện & đánh giá trên môi trường Kaggle
+├── 02_evaluation_mini.ipynb        # Notebook adaptation và kiểm tra bịt mắt ảnh (Sanity Check)
+├── Evaluation_task_prefix.ipynb    # Notebook đánh giá mô hình với thiết lập Task Prefix
+├── livr-mini-benchmark.ipynb       # Notebook nghiên cứu tổng hợp và benchmark mô hình
+├── train_kaggle.py                 # Script Python chạy huấn luyện tự động trên Kaggle
+├── requirements.txt                # Danh sách thư viện phụ thuộc bắt buộc
+└── README.md                       # Tài liệu hướng dẫn sử dụng và giới thiệu dự án
 ```
 
 ---
 
-## 🚀 4. Hướng Dẫn Cài Đặt & Sử Dụng
+## 4. Hướng Dẫn Cài Đặt & Sử Dụng
 
 ### Chạy Cục Bộ (Local Environment)
 1. Khởi tạo môi trường ảo và cài đặt các thư viện phụ thuộc:
@@ -78,11 +89,8 @@ LIVR-Mini-Benchmark/
 
 ---
 
-## 📈 5. Các Thử Nghiệm Kiểm Định Khoa Học
+## 5. Các Thử Nghiệm Kiểm Định Khoa Học
 *   **Baseline Comparison**: Chạy thử nghiệm đối chiếu độ chính xác Accuracy giữa mô hình LIVR (có LoRA) và mô hình nguyên bản của hãng (ngắt LoRA thông qua context manager `model.disable_adapter()`).
 *   **Sanity Check (Bịt mắt ảnh)**: Trong quá trình suy luận ở Giai đoạn đánh giá, mô hình sẽ bị chặn ảnh đột ngột (ép `model.livr_stage = 1`). Mức sụt giảm Accuracy nhỏ/vừa phải chứng minh các Latent Tokens đã đóng gói thành công tri thức thị giác.
 
 ---
-
-## 📄 6. Tài Liệu Báo Cáo
-Báo cáo nghiệm thu chi tiết, giải thích học thuật sâu sắc kèm ví dụ so sánh thực tế và giải pháp khắc phục các sự cố về bộ nhớ/lỗi thiết bị được lưu trữ đầy đủ tại: **[docs/nghiem_thu.md](docs/nghiem_thu.md)**.
